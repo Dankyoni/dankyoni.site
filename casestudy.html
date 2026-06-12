@@ -42,7 +42,8 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .cs-facts{display:flex;gap:2rem}
 .cs-fact strong{display:block;font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink);line-height:1}
 .cs-fact span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-top:2px;display:block}
-.cs-read{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.35rem;flex-shrink:0;font-weight:500}
+.cs-read{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--white);background:var(--ink);padding:.55rem 1.2rem;display:flex;align-items:center;gap:.45rem;flex-shrink:0;font-weight:500;transition:background .18s}
+.cs-item:hover .cs-read{background:var(--accent)}
 .cs-read i{font-size:13px;transition:transform .2s}
 .cs-item:hover .cs-read i{transform:translateX(3px)}
 
