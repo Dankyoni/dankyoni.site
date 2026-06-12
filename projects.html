@@ -200,13 +200,10 @@ a.hcta{text-decoration:none}
 </header>
 <div class="page-head"><h2>Projects</h2><p>Selected work, methodology frameworks, and target role profiles — drawn from 5+ years in consulting, account management, and e-commerce growth across APAC.</p></div>
   <div class="filter-row">
-    <span class="fl">Filter:</span>
-    <button class="fb on" onclick="fp('all',this)">All</a>
-    <button class="fb" onclick="fp('consulting',this)">Market Entry Consulting</a>
-    <button class="fb" onclick="fp('account',this)">Account Management</a>
-    <button class="fb" onclick="fp('ecommerce',this)">E-commerce Growth</a>
+    <button class="fb on" onclick="sw('roles',this)">Role Profiles</button>
+    <button class="fb" onclick="sw('work',this)">Selected Work &amp; Methodology</button>
   </div>
-  <div class="pgrid">
+  <div id="sec-roles" class="pgrid">
     <div class="pcard wide" data-cat="consulting" onclick="od(0)">
       <div class="ptop" style="background:linear-gradient(90deg,#222,#555)"></div>
       <div class="pbody">
@@ -248,9 +245,8 @@ a.hcta{text-decoration:none}
     </div>
   </div>
 </div>
-<div class="section" style="padding:2.5rem 2.8rem 3rem;border-bottom:1px solid var(--border)">
-  <div class="sec-label">Selected Work &amp; Methodology</div>
-  <div class="pgrid" style="padding:0;margin-top:1.5rem">
+<div id="sec-work" style="display:none;padding:2.5rem 2.8rem 3rem;border-bottom:1px solid var(--border)">
+  <div class="pgrid" style="padding:0">
     <div class="pcard" onclick="od(3)">
       <div class="ptop" style="background:linear-gradient(90deg,#8B6F4E,#b89070)"></div>
       <div class="pbody">
@@ -333,10 +329,11 @@ const drawerData=[
   {tag:"Methodology · Account Management",title:"KAM Account Tiering & Portfolio Prioritisation",body:"A practical account prioritisation framework applied across an 8+ brand portfolio at Rakuten Group, driving GMV and gross profit to 132% of target. The 2×2 matrix maps Revenue Potential against Relationship Depth to assign differentiated management strategies — ensuring effort is concentrated where it creates the most commercial value.",phases:["Tier A — Grow: High potential + strong relationship. Primary investment: deep advisory, co-planning, joint campaigns.","Tier B — Protect: High potential + developing relationship. Goal: build trust, increase share of wallet incrementally.","Tier C — Develop: Lower potential + strong relationship. Leverage trust to identify adjacent or upsell opportunities.","Tier D — Monitor: Lower potential + thin relationship. Maintain service efficiently; deprioritise active resource spend."]},
   {tag:"Market Research · China Market Entry",title:"Japan-to-China Consumer Portfolio Assessment",body:"At Nomura Research Institute Shanghai, led the prioritisation of a Japanese consumer goods portfolio for China market entry. Assessed 20+ product concepts across market attractiveness, competitive intensity, and consumer fit — shortlisting 10 with full competitor benchmarks, consumer insights, and commercialisation roadmaps delivered to the client's China leadership team.",phases:["Portfolio Scoping — 20+ concepts screened against market size, competitive density, and regulatory feasibility","Consumer & Competitor Benchmarking — category analysis, brand positioning map, pricing architecture, channel strategy","Shortlist Evaluation — 10 concepts ranked by entry difficulty, revenue potential, and strategic fit with client capabilities","Commercialisation Roadmap — go-to-market sequencing, platform prioritisation, Year 1 KPIs, resource requirements"]}
 ];
-function fp(cat,btn){
+function sw(id,btn){
   document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
   btn.classList.add('on');
-  document.querySelectorAll('.pcard').forEach(c=>{c.style.display=(cat='all'||c.dataset.cat===cat)?'flex':'none';});
+  document.getElementById('sec-roles').style.display=id==='roles'?'grid':'none';
+  document.getElementById('sec-work').style.display=id==='work'?'block':'none';
 }
 function od(i){
   const d=drawerData[i];
