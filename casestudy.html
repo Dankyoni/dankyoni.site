@@ -21,24 +21,31 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 1.1rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none;display:flex;align-items:center}
 .tab:hover{color:var(--ink)}
 .tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
-.page-head{padding:3rem 2.8rem 2rem;border-bottom:1px solid var(--border)}
-.page-head h2{font-family:var(--serif);font-size:2rem;font-weight:400;margin-bottom:.35rem}
-.page-head p{color:var(--muted);font-size:13px;max-width:540px}
-.pgrid{padding:2.5rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.pcard{background:var(--white);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.pcard:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.06)}
-.pcard.wide{grid-column:span 2}
-.ptop{height:4px}
-.pbody{padding:1.75rem;flex:1}
-.ptag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
-.ptitle{font-family:var(--serif);font-size:1.2rem;font-weight:400;line-height:1.3;margin-bottom:.65rem}
-.pdesc{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:1.2rem}
-.pmets{display:flex;gap:1.4rem}
-.pm{border-left:2px solid var(--tag);padding-left:.7rem}
-.pmv{font-family:var(--serif);font-size:1.15rem}
-.pml{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.pfoot{border-top:1px solid var(--border);padding:.9rem 1.75rem;display:flex;justify-content:space-between;align-items:center}
-.pscope{font-size:11px;color:var(--muted)}
+
+.page-head{padding:3rem 2.8rem 2.5rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-end;gap:2rem}
+.page-head h2{font-family:var(--serif);font-size:2rem;font-weight:400;margin-bottom:.3rem}
+.page-head p{color:var(--muted);font-size:13px;max-width:480px}
+.ph-count{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#bbb;flex-shrink:0}
+
+.cs-list{padding:0 2.8rem 4rem}
+.cs-item{display:grid;grid-template-columns:72px 1fr;gap:2.5rem;padding:2.8rem 0;border-bottom:1px solid var(--border);cursor:pointer;transition:background .18s;margin:0 -2.8rem;padding-left:2.8rem;padding-right:2.8rem}
+.cs-item:first-child{border-top:1px solid var(--border)}
+.cs-item:hover{background:var(--white)}
+.cs-left{padding-top:.3rem}
+.cs-num{font-family:var(--serif);font-size:2.6rem;font-weight:400;color:#ddd;line-height:1;letter-spacing:-.02em}
+.cs-accent{width:2px;height:28px;background:var(--accent);margin-top:.8rem}
+.cs-right{}
+.cs-eyebrow{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#999;margin-bottom:.65rem}
+.cs-title{font-family:var(--serif);font-size:1.55rem;font-weight:400;line-height:1.22;margin-bottom:.75rem;max-width:640px}
+.cs-desc{font-size:13px;color:var(--muted);line-height:1.85;max-width:600px;margin-bottom:1.4rem}
+.cs-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.cs-facts{display:flex;gap:2rem}
+.cs-fact strong{display:block;font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink);line-height:1}
+.cs-fact span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-top:2px;display:block}
+.cs-read{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.35rem;flex-shrink:0;font-weight:500}
+.cs-read i{font-size:13px;transition:transform .2s}
+.cs-item:hover .cs-read i{transform:translateX(3px)}
+
 footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(--white);display:flex;justify-content:space-between;align-items:center}
 .fcopy{font-size:12px;color:var(--muted)}
 .ftop{background:none;border:none;font-size:12px;color:var(--muted);cursor:pointer;font-family:var(--sans)}
@@ -58,43 +65,51 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
 </header>
 
 <div class="page-head">
-  <h2>Case Studies</h2>
-  <p>Two public analyses applying the NRI consulting framework — market data analysis, leading-company study, and client implications — using publicly available data.</p>
+  <div>
+    <h2>Case Studies</h2>
+    <p>Public analyses applying the NRI consulting framework — market data analysis, leading-company study, and client implications — to real categories using publicly available data.</p>
+  </div>
+  <div class="ph-count">2 Studies</div>
 </div>
 
-<div class="pgrid" style="padding:2.5rem 2.8rem 4rem">
-  <div class="pcard wide" onclick="window.location='npd.html'">
-    <div class="ptop" style="background:linear-gradient(90deg,#8B6F4E,#b89070)"></div>
-    <div class="pbody">
-      <div class="ptag"><i class="ti ti-flask"></i> FMCG · NPD · NRI Shanghai · Anonymised</div>
-      <h3 class="ptitle">China New Product Development: From Category Research to Executive Decision</h3>
-      <p class="pdesc">Coordinated a 6-month NPD program for a global household &amp; personal care manufacturer across 6 China categories — from market sizing and consumer research through regulatory checks and ODM mapping to a 61-slide executive steering pack that shaped the client's China product roadmap.</p>
-      <div class="pmets">
-        <div class="pm"><div class="pmv">6</div><div class="pml">Categories Assessed</div></div>
-        <div class="pm"><div class="pmv">~61</div><div class="pml">Slide Deliverable</div></div>
-        <div class="pm"><div class="pmv">6 mo.</div><div class="pml">Program Length</div></div>
-      </div>
+<div class="cs-list">
+  <div class="cs-item" onclick="window.location='npd.html'">
+    <div class="cs-left">
+      <div class="cs-num">01</div>
+      <div class="cs-accent"></div>
     </div>
-    <div class="pfoot">
-      <div class="pscope">PMO Coordination · Consumer Research · Competitive Analysis · Regulatory</div>
-      <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)">Read Case Study →</span>
+    <div class="cs-right">
+      <div class="cs-eyebrow">FMCG · NPD · NRI Shanghai · Anonymised · Oct 2023 – May 2024</div>
+      <h2 class="cs-title">China New Product Development: From Category Research to Executive Decision</h2>
+      <p class="cs-desc">Coordinated a 6-month NPD program for a global household &amp; personal care manufacturer across 6 China categories — from market sizing and consumer research through regulatory checks and ODM mapping to a 61-slide executive steering pack that shaped the client's China product roadmap.</p>
+      <div class="cs-bottom">
+        <div class="cs-facts">
+          <div class="cs-fact"><strong>6</strong><span>Categories</span></div>
+          <div class="cs-fact"><strong>~61</strong><span>Slide Pack</span></div>
+          <div class="cs-fact"><strong>6 mo.</strong><span>Program</span></div>
+        </div>
+        <div class="cs-read">Read Case Study <i class="ti ti-arrow-right"></i></div>
+      </div>
     </div>
   </div>
-  <div class="pcard wide" onclick="window.location='toothbrush.html'">
-    <div class="ptop" style="background:linear-gradient(90deg,#222,#555)"></div>
-    <div class="pbody">
-      <div class="ptag"><i class="ti ti-device-desktop-analytics"></i> Consumer Electronics · Oral Care · China Market</div>
-      <h3 class="ptitle">China Electric Toothbrush Market: Mid-Term Strategy Review</h3>
-      <p class="pdesc">Market sizing, competitive benchmark, and internal gap analysis for a brand at a strategic inflection point in China's electric toothbrush category — where EC-native domestic challengers were rapidly closing share on Tmall.</p>
-      <div class="pmets">
-        <div class="pm"><div class="pmv">3</div><div class="pml">Brands Benchmarked</div></div>
-        <div class="pm"><div class="pmv">~45</div><div class="pml">Slide Format</div></div>
-        <div class="pm"><div class="pmv">Public</div><div class="pml">Data Source</div></div>
-      </div>
+
+  <div class="cs-item" onclick="window.location='toothbrush.html'">
+    <div class="cs-left">
+      <div class="cs-num">02</div>
+      <div class="cs-accent"></div>
     </div>
-    <div class="pfoot">
-      <div class="pscope">Market Sizing · Tmall Analysis · Competitive Benchmarking · Internal Gap Analysis</div>
-      <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)">Read Case Study →</span>
+    <div class="cs-right">
+      <div class="cs-eyebrow">Consumer Electronics · Oral Care · China Market · Public Data Analysis</div>
+      <h2 class="cs-title">China Electric Toothbrush Market: Mid-Term Strategy Review</h2>
+      <p class="cs-desc">Market sizing, competitive benchmark, and internal gap analysis for a brand at a strategic inflection point in China's electric toothbrush category — where EC-native domestic challengers were rapidly closing share on Tmall and price bands were consolidating.</p>
+      <div class="cs-bottom">
+        <div class="cs-facts">
+          <div class="cs-fact"><strong>3</strong><span>Brands Benchmarked</span></div>
+          <div class="cs-fact"><strong>~45</strong><span>Slide Format</span></div>
+          <div class="cs-fact"><strong>Public</strong><span>Data Source</span></div>
+        </div>
+        <div class="cs-read">Read Case Study <i class="ti ti-arrow-right"></i></div>
+      </div>
     </div>
   </div>
 </div>
