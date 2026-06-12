@@ -3,26 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dan Xu · Case Studies</title>
+<title>Dan Xu · Case Study</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --ink:#111;--muted:#777;--light:#f8f7f5;--white:#fff;
-  --border:#e5e1db;--tag:#eeebe6;
+  --border:#e5e1db;--tag:#eeebe6;--accent:#8B6F4E;
   --serif:'Playfair Display',serif;--sans:'DM Sans',sans-serif;
 }
 body{font-family:var(--sans);background:var(--light);color:var(--ink);font-size:14px;line-height:1.65;min-height:100vh}
-header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 2.8rem;background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30}
-.logo{font-family:var(--serif);font-size:1.1rem;cursor:pointer;font-weight:400}
+header{display:flex;justify-content:space-between;align-items:stretch;padding:0 2.8rem;background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30;height:58px}
+.logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;display:flex;align-items:center;text-decoration:none;color:var(--ink);flex-shrink:0}
 .logo span{color:var(--muted);font-style:italic;font-size:.95rem}
-.hcta{font-family:var(--sans);font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:.5rem 1.3rem;border:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer;transition:all .2s}
-.hcta:hover{background:var(--ink);color:var(--white)}
-.tabs{display:flex;border-bottom:1px solid var(--border);background:var(--white);padding:0 2.8rem;position:sticky;top:57px;z-index:20;overflow-x:auto}
-.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:.95rem 1.4rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap}
+.header-nav{display:flex;align-items:stretch;overflow-x:auto}
+.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 1.1rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none;display:flex;align-items:center}
 .tab:hover{color:var(--ink)}
-.tab.on{color:var(--ink);border-bottom-color:var(--ink);font-weight:500}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
 .page{animation:fi .22s ease}
 
 @keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
@@ -188,119 +186,241 @@ a.logo{text-decoration:none;color:var(--ink)}
 a.hcta{text-decoration:none}
 .cs-hero{display:block!important}
 .cs-body{display:block!important}
-
-a.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
-padding:.95rem 1.4rem;color:var(--muted);border-bottom:2px solid transparent;
-transition:all .2s;white-space:nowrap;text-decoration:none;display:inline-block}
-a.tab:hover{color:var(--ink)}
-a.logo{text-decoration:none;color:var(--ink)}
-a.hcta{text-decoration:none}
-
-.cs-index-hero{padding:4rem 2.8rem 3rem;border-bottom:1px solid var(--border)}
-.cs-index-hero h1{font-family:var(--serif);font-size:2.4rem;font-weight:400;margin-bottom:.5rem}
-.cs-index-hero p{color:var(--muted);font-size:13px;max-width:520px;line-height:1.8}
-
-.cs-cards{padding:3rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-
-.cs-card{background:var(--white);border:1px solid var(--border);overflow:hidden;
-  text-decoration:none;color:var(--ink);display:flex;flex-direction:column;
-  transition:transform .2s,box-shadow .2s}
-.cs-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.07)}
-
-.cs-card-top{height:5px}
-.cs-card-body{padding:2rem;flex:1}
-.cs-card-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem}
-.cs-card-title{font-family:var(--serif);font-size:1.4rem;font-weight:400;line-height:1.3;margin-bottom:.75rem}
-.cs-card-desc{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:1.25rem}
-.cs-card-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem}
-.cs-card-tag{font-size:11px;padding:.28rem .7rem;background:var(--tag);border-radius:2px}
-.cs-card-meta{display:flex;gap:1.5rem}
-.cs-card-stat strong{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:400}
-.cs-card-stat span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.cs-card-foot{border-top:1px solid var(--border);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}
-.cs-card-arrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:.3rem}
 </style>
 </head>
 <body>
 <header>
-  <a href="index.html" class="logo" style="text-decoration:none">Dan Xu <span>· Personal Site</span></a>
-  <a href="contact.html" class="hcta" style="text-decoration:none">Get in Touch</a>
+  <a href="index.html" class="logo">Dan Xu <span>· Personal Site</span></a>
+  <nav class="header-nav">
+    <a href="index.html" class="tab">About</a>
+    <a href="experience.html" class="tab">Experience</a>
+    <a href="projects.html" class="tab">Projects</a>
+    <a href="casestudy.html" class="tab on">Case Study</a>
+    <a href="articles.html" class="tab">Articles</a>
+    <a href="contact.html" class="tab">Contact</a>
+  </nav>
 </header>
-<div class="tabs">
-  <a href="index.html" class="tab">About</a>
-  <a href="experience.html" class="tab">Experience</a>
-  <a href="projects.html" class="tab">Forward Projects</a>
-  <a href="casestudy.html" class="tab" style="color:var(--ink);border-bottom:2px solid var(--ink);font-weight:500">Case Study</a>
-  <a href="articles.html" class="tab">Articles</a>
-  <a href="contact.html" class="tab">Contact</a>
-  
-</div>
 
-<div class="cs-index-hero">
-  <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem">Case Studies</div>
-  <h1>Business Management/Program Management</h1>
-  <p>A selection of anonymized  case studies from my work — demonstrating analytical frameworks, research methodology, and executive storytelling across different client engagements.</p>
-</div>
+<div class="cs-hero">
+    <a class="cs-back" href="projects.html"><i class="ti ti-arrow-left"></i> Back to Projects</a>
+    <div class="cs-eyebrow">Case Study · Consumer Electronics · China Market</div>
+    <h1>China Electric Toothbrush Market:<br><em>Mid-Term Strategy Review</em></h1>
+    <div class="cs-meta">
+      <div class="cs-meta-item"><strong>Sector</strong>Consumer Electronics / Oral Care</div>
+      <div class="cs-meta-item"><strong>Market</strong>China (Tmall / EC + Offline)</div>
+      <div class="cs-meta-item"><strong>Brands Analysed</strong>Philips Sonicare · Usmile · Oral-B</div>
+      <div class="cs-meta-item"><strong>Format</strong>~45-slide executive steering pack</div>
+      <div class="cs-meta-item"><strong>Framework</strong>Mirrors NRI consulting methodology</div>
+    </div>
+    <div class="cs-disclaimer">⚡ Public analysis — all data from publicly available sources (Tmall, Frost & Sullivan, Euromonitor)</div>
+  </div>
+  <div class="cs-body">
 
-<div class="cs-cards">
+    <!-- SITUATION -->
+    <div class="cs-section">
+      <div class="cs-section-label">Situation</div>
+      <h2>Why This Review Was Needed</h2>
+      <p>A brand competing in China's electric toothbrush market faced a strategic inflection point: the category was shifting online rapidly, price bands were consolidating on Tmall, and EC-native domestic competitors were scaling share aggressively. Leadership needed hard evidence — not anecdotal sales narratives — to reset the mid-term plan.</p>
+      <p>The brief required answers to four questions: Where is the market going? How is the online channel structured? What are competitors doing commercially? And where are the internal gaps in organizational structure, EC operations, and after-sales that are holding the brand back?</p>
+      <div class="insight-box"><strong>Analytical note:</strong> This public case study applies the same two-chapter consulting framework — market data analysis followed by leading-company study and client implications — that I used in executive steering packs at NRI Shanghai, here applied to publicly available data.</div>
+    </div>
 
-  <!-- Card 1: Electric Toothbrush -->
-  <a href="toothbrush.html" class="cs-card">
-    <div class="cs-card-top" style="background:linear-gradient(90deg,#222,#666)"></div>
-    <div class="cs-card-body">
-      <div class="cs-card-label">Market Strategy · Consumer Electronics · China</div>
-      <h2 class="cs-card-title">China Electric Toothbrush Market: Mid-Term Strategy Review</h2>
-      <p class="cs-card-desc">A public-domain case study applying the NRI consulting framework — market sizing, competitor benchmarking, price-band analysis, purchase journey mapping, and strategic improvement priorities — to China's electric toothbrush category.</p>
-      <div class="cs-card-tags">
-        <span class="cs-card-tag">Market Sizing</span>
-        <span class="cs-card-tag">Competitor Benchmark</span>
-        <span class="cs-card-tag">Price-Band Analysis</span>
-        <span class="cs-card-tag">Channel Strategy</span>
-        <span class="cs-card-tag">Tmall / EC</span>
+    <!-- CHAPTER 1 -->
+    <div class="cs-section">
+      <div class="cs-section-label">Chapter 1 — Market Data Analysis</div>
+      <h2>Market Sizing & Online Channel Structure</h2>
+      <p>China's electric toothbrush market has grown from ~RMB 4.5bn (2019) to an estimated ~RMB 9–10bn by 2024, driven by oral-care awareness, premiumisation, and EC penetration. Online channels — led by Tmall — now account for ~55–60% of category sales, with TikTok commerce gaining meaningful share since 2022.</p>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Market Size Growth — China Electric Toothbrush (RMB bn, estimated)</div>
+        <div class="bar-row"><div class="bar-label">2019</div><div class="bar-track"><div class="bar-fill" style="width:45%;background:#444">RMB 4.5bn</div></div></div>
+        <div class="bar-row"><div class="bar-label">2021</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:#3a3a3a">RMB 6.1bn</div></div></div>
+        <div class="bar-row"><div class="bar-label">2023</div><div class="bar-track"><div class="bar-fill" style="width:78%;background:#2a2a2a">RMB 7.8bn</div></div></div>
+        <div class="bar-row"><div class="bar-label">2024E</div><div class="bar-track"><div class="bar-fill" style="width:95%;background:#111">RMB ~9.5bn</div></div></div>
       </div>
-      <div class="cs-card-meta">
-        <div class="cs-card-stat"><strong>3</strong><span>Brands Analysed</span></div>
-        <div class="cs-card-stat"><strong>~45</strong><span>Slide Framework</span></div>
-        <div class="cs-card-stat"><strong>Public</strong><span>Data Only</span></div>
+
+      <p style="margin-top:1.2rem"><strong>Product mix:</strong> The market splits between standard sonic brushes (high volume, mid price) and premium oscillating models (lower volume, higher margin, stronger offline presence). EC penetration is highest in the sonic/entry-mid segment — the highest-volume battleground on Tmall.</p>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Tmall GMV Share — Top Brands (H1 2024, estimated)</div>
+        <div class="bar-row"><div class="bar-label">Philips Sonicare</div><div class="bar-track"><div class="bar-fill" style="width:32%;background:#222">~32%</div></div><div class="bar-val">~32%</div></div>
+        <div class="bar-row"><div class="bar-label">Usmile</div><div class="bar-track"><div class="bar-fill" style="width:26%;background:#555">~26%</div></div><div class="bar-val">~26%</div></div>
+        <div class="bar-row"><div class="bar-label">Oral-B</div><div class="bar-track"><div class="bar-fill" style="width:14%;background:#888">~14%</div></div><div class="bar-val">~14%</div></div>
+        <div class="bar-row"><div class="bar-label">Others</div><div class="bar-track"><div class="bar-fill" style="width:28%;background:#bbb;color:#666">~28%</div></div><div class="bar-val">~28%</div></div>
+      </div>
+
+      <p>Top-5 brand concentration on Tmall is approximately 75–80% of category GMV. The key dynamic: Usmile has rapidly closed the gap with Philips through aggressive pricing in the RMB 200–400 sweet spot, strong KOL activation, and a fully EC-native operating model.</p>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Price-Band Distribution — Tmall Unit Volume Concentration</div>
+        <div class="price-band">
+          <div class="pb-row"><div class="pb-range">＜ RMB 100</div><div class="pb-track"><div class="pb-fill" style="width:10%;background:#ddd;color:#666">Low</div></div><div class="pb-brands">White-label / generic</div></div>
+          <div class="pb-row"><div class="pb-range">RMB 100–200</div><div class="pb-track"><div class="pb-fill" style="width:28%;background:#bbb;color:#fff">Medium</div></div><div class="pb-brands">Usmile entry, Oral-B basic</div></div>
+          <div class="pb-row"><div class="pb-range">RMB 200–400</div><div class="pb-track"><div class="pb-fill" style="width:82%;background:#444;color:#fff">★ Highest Volume</div></div><div class="pb-brands">Usmile core · Oral-B mid · Philips mid</div></div>
+          <div class="pb-row"><div class="pb-range">RMB 400–800</div><div class="pb-track"><div class="pb-fill" style="width:48%;background:#2a2a2a;color:#fff">High</div></div><div class="pb-brands">Philips Sonicare core</div></div>
+          <div class="pb-row"><div class="pb-range">RMB 800+</div><div class="pb-track"><div class="pb-fill" style="width:18%;background:#111;color:#fff">Premium</div></div><div class="pb-brands">Philips Prestige · Oral-B iO</div></div>
+        </div>
+      </div>
+      <div class="insight-box"><strong>Key finding:</strong> Price-band consolidation is happening in the RMB 200–400 range. Brands without a clear, differentiated position in this band — or a credible premium moat above it — are being squeezed from both sides.</div>
+    </div>
+
+    <!-- CHAPTER 2 -->
+    <div class="cs-section">
+      <div class="cs-section-label">Chapter 2 — Leading-Company Study</div>
+      <h2>Competitor Benchmark & Commercial Model Analysis</h2>
+      <p>The leading-company study examines how the two most instructive competitors — an EC-native domestic challenger and a global incumbent — have structured their channel economics, promotional posture, and after-sales models. The goal is not just to describe what they do, but to identify the commercial logic behind it and the implications for our client.</p>
+
+      <div class="cs-grid" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="cs-grid-cell head"><div class="cgc-title">Dimension</div><div class="cgc-val" style="color:#fff">—</div></div>
+        <div class="cs-grid-cell head"><div class="cgc-title">EC-Native Challenger</div><div class="cgc-val" style="color:#ddd">e.g. Usmile</div></div>
+        <div class="cs-grid-cell head"><div class="cgc-title">Global Incumbent</div><div class="cgc-val" style="color:#ddd">e.g. Philips Sonicare</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Channel Split</div><div class="cgc-val">~90% online (Tmall + TikTok)</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~90% online (Tmall + TikTok)</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~60% online / ~40% offline KA</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Traffic Mix</div><div class="cgc-val">KOL-heavy / live-commerce</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~70% social/KOL, ~30% paid search</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~80% standard feed, ~20% SNS</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Promotional Posture</div><div class="cgc-val">Aggressive / frequent discounting</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">High — price-led conversion</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Selective — brand-equity led</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">After-Sales Model</div><div class="cgc-val">Returns-led / low-touch</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Online returns, minimal service</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Authorised service centres + online</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Margin Logic</div><div class="cgc-val">Volume-driven / thin margin</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">High volume, lower unit margin</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Lower volume, higher unit margin</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Key Strength</div><div class="cgc-val">Price agility + social reach</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">EC speed + content engine</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Brand trust + service quality</div></div>
+      </div>
+
+      <div class="insight-box"><strong>Commercial logic:</strong> The EC-native model wins on agility and content velocity but sacrifices margin and service depth. The global incumbent model protects margin and premium positioning but is structurally slow to respond to EC dynamics. A mid-market brand caught between these two is most vulnerable.</div>
+    </div>
+
+    <!-- PURCHASE JOURNEY -->
+    <div class="cs-section">
+      <div class="cs-section-label">Chapter 2 continued — Client Implications</div>
+      <h2>Purchase Journey Pain Points</h2>
+      <p>Understanding where consumers drop off — or lose confidence — across the purchase journey is essential for diagnosing EC underperformance. Three stages are most critical in this category:</p>
+
+      <div class="cs-grid" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Awareness</div></div>
+        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Trial & Conversion</div></div>
+        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Adherence & Loyalty</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">Why should I choose this brand over Usmile?</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">Is the price-to-quality trade-off worth it?</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">What happens when it breaks or needs service?</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">Brand messaging not differentiated from value competitors; KOL coverage thin vs. EC-native rivals</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">Review volume and rating scores lag EC-native brands; promotional mechanics unclear vs. competitors</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">After-sales process unclear online; repair/return policies not prominently communicated pre-purchase</div></div>
+
+        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Invest in differentiated efficacy-led content and KOL seeding at mid-tier</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Prioritise review generation; clarify value proposition vs. price-band peers</div></div>
+        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Make AS model a front-of-page selling point, not a back-end footnote</div></div>
       </div>
     </div>
-    <div class="cs-card-foot">
-      <span>Consumer Electronics · Philips · Usmile · Oral-B</span>
-      <span class="cs-card-arrow">View Case Study <i class="ti ti-arrow-right"></i></span>
-    </div>
-  </a>
 
-  <!-- Card 2: NPD -->
-  <a href="npd.html" class="cs-card">
-    <div class="cs-card-top" style="background:linear-gradient(90deg,#444,#888)"></div>
-    <div class="cs-card-body">
-      <div class="cs-card-label">NPD · FMCG · China · ~6 Months</div>
-      <h2 class="cs-card-title">China New Product Development: From Category Research to Executive Decision</h2>
-      <p class="cs-card-desc">Coordinated a 6-month NPD program for a global household & personal care manufacturer — from market sizing and consumer research across 6 categories to a 61-slide executive steering pack that shaped the client's China product roadmap.</p>
-      <div class="cs-card-tags">
-        <span class="cs-card-tag">NPD & Portfolio Prioritization</span>
-        <span class="cs-card-tag">PMO Coordination</span>
-        <span class="cs-card-tag">Consumer Research</span>
-        <span class="cs-card-tag">4P Strategy</span>
-        <span class="cs-card-tag">Regulatory</span>
-      </div>
-      <div class="cs-card-meta">
-        <div class="cs-card-stat"><strong>~61</strong><span>Slide Capstone</span></div>
-        <div class="cs-card-stat"><strong>~10</strong><span>SKUs Shortlisted</span></div>
-        <div class="cs-card-stat"><strong>6</strong><span>Months Program</span></div>
-      </div>
-    </div>
-    <div class="cs-card-foot">
-      <span>Global FMCG Manufacturer · Japan HQ · Anonymized</span>
-      <span class="cs-card-arrow">View Case Study <i class="ti ti-arrow-right"></i></span>
-    </div>
-  </a>
+    <!-- INTERNAL GAP ANALYSIS -->
+    <div class="cs-section">
+      <div class="cs-section-label">Chapter 2 continued — Internal Gap Analysis</div>
+      <h2>Organizational Structure, EC Operating Model & After-Sales Gaps</h2>
+      <p>Beyond the external competitive picture, the steering pack examined where internal structure was limiting the brand's ability to compete effectively online. Three gap areas were identified:</p>
 
-</div>
+      <div class="cs-findings">
+        <div class="cs-finding">
+          <div class="cs-finding-num">Organizational Structure</div>
+          <div class="cs-finding-title">No dedicated EC team structure</div>
+          <div class="cs-finding-desc">EC and offline planning sit within the same team, creating conflicting KPIs and slow response to platform dynamics. A dedicated EC pod — with its own P&L visibility — is needed to compete with EC-native brands operating at pace.</div>
+        </div>
+        <div class="cs-finding">
+          <div class="cs-finding-num">EC Ops</div>
+          <div class="cs-finding-title">Traffic allocation skewed to standard feed</div>
+          <div class="cs-finding-desc">~80% of Tmall ad spend goes to standard search feed, with minimal investment in SNS/social traffic (TikTok, Redbook). EC-native competitors run the inverse — content-led traffic at lower CPM, with paid search as a conversion layer, not the primary acquisition driver.</div>
+        </div>
+        <div class="cs-finding">
+          <div class="cs-finding-num">After-Sales</div>
+          <div class="cs-finding-title">AS capacity not scaled for EC volume</div>
+          <div class="cs-finding-desc">After-sales infrastructure was designed for offline retail volumes. As EC share grows, return rates and service enquiries are increasing faster than capacity. Without dedicated EC after-sales headcount and clear SLAs, this becomes a review and retention liability.</div>
+        </div>
+        <div class="cs-finding">
+          <div class="cs-finding-num">KPIs</div>
+          <div class="cs-finding-title">Cross-functional KPI visibility is limited</div>
+          <div class="cs-finding-desc">Sales, marketing, and operations teams track different metrics with no shared dashboard. This makes it difficult for leadership to identify where the EC funnel is leaking — awareness, conversion, or post-purchase — and to allocate resources accordingly.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTION LIST -->
+    <div class="cs-section">
+      <div class="cs-section-label">Improvement Priorities — Action List</div>
+      <h2>Recommendations Across Organizational Structure, EC & After-Sales</h2>
+      <p>The steering pack closed with a prioritised action list across three workstreams, sequenced by impact and implementation complexity:</p>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Workstream 1 — Brand Positioning vs. Value Competitors</div>
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem">
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">1</div><div style="font-size:13px;color:#444">Develop efficacy-led content that clearly differentiates from value-tier competitors — not on price, but on clinical trust, build quality, and after-sales confidence</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">2</div><div style="font-size:13px;color:#444">Seed mid-tier KOLs (100k–500k followers) with product-in-use content; shift from brand-awareness KOLs to conversion-focused creators in the RMB 300–500 price band</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">3</div><div style="font-size:13px;color:#444">Clarify price-band architecture — reduce SKU overlap between tiers to eliminate internal channel conflict and simplify the consumer decision</div></div>
+        </div>
+      </div>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Workstream 2 — Tmall EC Operating Model</div>
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem">
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">1</div><div style="font-size:13px;color:#444">Rebalance traffic allocation: shift from ~80% standard feed to a mix of ~50% standard feed / ~30% SNS (TikTok, Redbook) / ~20% live-commerce, tested over one campaign cycle</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">2</div><div style="font-size:13px;color:#444">Build a shared EC KPI dashboard across sales, marketing, and ops — tracking funnel metrics from impressions to post-purchase reviews in one view</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">3</div><div style="font-size:13px;color:#444">Stand up a dedicated EC pod with its own P&L — separate from offline planning — to enable faster test-and-learn cycles on pricing, content, and promotional mechanics</div></div>
+        </div>
+      </div>
+
+      <div class="cs-chart-wrap">
+        <div class="cs-chart-title">Workstream 3 — After-Sales Capacity & Communication</div>
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem">
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">1</div><div style="font-size:13px;color:#444">Add dedicated EC after-sales headcount scaled to online volume — with clear SLAs for response time, return processing, and repair turnaround</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">2</div><div style="font-size:13px;color:#444">Move after-sales policy (warranty, repair, return) to front-of-page on Tmall flagship — treat it as a conversion asset, not a compliance footnote</div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:20px;height:20px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0;margin-top:2px">3</div><div style="font-size:13px;color:#444">Pilot a post-purchase adherence programme (usage tips, check-in messaging, accessory reminders) to improve retention and reduce churn-driven negative reviews</div></div>
+        </div>
+      </div>
+
+      <div class="insight-box" style="margin-top:1.5rem"><strong>Steering outcome:</strong> These three workstreams form a sequenced mid-term plan — brand repositioning first (6 months), EC operating model rebuild second (6–12 months), after-sales scaling third (12–18 months) — giving leadership a clear investment roadmap with measurable milestones at each stage.</div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="cs-section">
+      <div class="cs-section-label">Skills Demonstrated</div>
+      <h2>What This Case Study Shows</h2>
+      <p>This analysis mirrors the two-chapter consulting framework — market data analysis + leading-company study with client implications — applied across 4+ concurrent client engagements at Nomura Research Institute Shanghai. A public-domain category is used here to demonstrate the methodology without disclosing confidential client work.</p>
+      <div class="skills-used">
+        <span class="su">Market Sizing & Forecasting</span><span class="su">EC Channel Analysis (Tmall/TikTok)</span>
+        <span class="su">Competitor Benchmarking</span><span class="su">Price-Band Analysis</span>
+        <span class="su">Purchase Journey Mapping</span><span class="su">Internal Gap Analysis</span>
+        <span class="su">Org Design Recommendations</span><span class="su">EC Operating Model</span>
+        <span class="su">After-Sales Strategy</span><span class="su">Executive Steering Pack</span>
+        <span class="su">Cross-functional KPI Design</span><span class="su">China FMCG / Consumer Goods</span>
+      </div>
+      <div style="margin-top:1.5rem"><a class="btn1" href="contact.html">Work with Dan →</a></div>
+    </div>
+
+  </div>
 
 <footer>
   <div class="fcopy">© 2026 Dan Xu</div>
   <button class="ftop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
 </footer>
+<script>
+function go(name){
+  const map={'about':'index.html','experience':'experience.html','projects':'projects.html','casestudy':'casestudy.html','articles':'articles.html','contact':'contact.html'};
+  if(map[name]) window.location=map[name];
+}
+</script>
 </body>
 </html>
