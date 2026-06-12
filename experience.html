@@ -10,19 +10,17 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --ink:#111;--muted:#777;--light:#f8f7f5;--white:#fff;
-  --border:#e5e1db;--tag:#eeebe6;
+  --border:#e5e1db;--tag:#eeebe6;--accent:#8B6F4E;
   --serif:'Playfair Display',serif;--sans:'DM Sans',sans-serif;
 }
 body{font-family:var(--sans);background:var(--light);color:var(--ink);font-size:14px;line-height:1.65;min-height:100vh}
-header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 2.8rem;background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30}
-.logo{font-family:var(--serif);font-size:1.1rem;cursor:pointer;font-weight:400}
+header{display:flex;justify-content:space-between;align-items:stretch;padding:0 2.8rem;background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30;height:58px}
+.logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;display:flex;align-items:center;text-decoration:none;color:var(--ink);flex-shrink:0}
 .logo span{color:var(--muted);font-style:italic;font-size:.95rem}
-.hcta{font-family:var(--sans);font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:.5rem 1.3rem;border:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer;transition:all .2s}
-.hcta:hover{background:var(--ink);color:var(--white)}
-.tabs{display:flex;border-bottom:1px solid var(--border);background:var(--white);padding:0 2.8rem;position:sticky;top:57px;z-index:20;overflow-x:auto}
-.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:.95rem 1.4rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap}
+.header-nav{display:flex;align-items:stretch;overflow-x:auto}
+.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 1.1rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none;display:flex;align-items:center}
 .tab:hover{color:var(--ink)}
-.tab.on{color:var(--ink);border-bottom-color:var(--ink);font-weight:500}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
 .page{animation:fi .22s ease}
 
 @keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
@@ -190,47 +188,60 @@ a.hcta{text-decoration:none}
 </head>
 <body>
 <header>
-  <a href="index.html" class="logo" style="text-decoration:none">Dan Xu <span>· Personal Site</span></a>
-  <a href="contact.html" class="hcta" style="text-decoration:none">Get in Touch</a>
+  <a href="index.html" class="logo">Dan Xu <span>· Personal Site</span></a>
+  <nav class="header-nav">
+    <a href="index.html" class="tab">About</a>
+    <a href="experience.html" class="tab on">Experience</a>
+    <a href="projects.html" class="tab">Projects</a>
+    <a href="casestudy.html" class="tab">Case Study</a>
+    <a href="articles.html" class="tab">Articles</a>
+    <a href="contact.html" class="tab">Contact</a>
+  </nav>
 </header>
-<div class="tabs">
-  <a href="index.html" class="tab">About</a>
-  <a href="experience.html" class="tab" style="color:var(--ink);border-bottom:2px solid var(--ink);font-weight:500">Experience</a>
-  <a href="projects.html" class="tab">Forward Projects</a>
-  <a href="casestudy.html" class="tab">Case Study</a>
-  <a href="articles.html" class="tab">Articles</a>
-  <a href="contact.html" class="tab">Contact</a>
-  
-</div>
-<div class="page-head"><h2>Work Experience</h2><p>5+ years across consulting, key account management, and e-commerce growth in Asia-Pacific markets.</p></div>
+<div class="page-head"><h2>Work Experience</h2><p>5+ years across consulting, key account management, and e-commerce growth in Asia-Pacific markets. Based in Bochum, Germany — open to English-primary consulting, BD, and e-commerce roles.</p></div>
   <div class="section">
     <div class="sec-label">Professional History</div>
     <div class="exp-list">
       <div class="exp-item">
         <div class="exp-left"><div class="company">Nomura Research Institute Shanghai</div><div class="period">Mar 2023 – Dec 2024</div><div class="loc">Shanghai, China</div></div>
         <div class="exp-right">
-          <div class="role">Consultant — Business Management & E-commerce Strategy</div>
-          <p class="desc">Managed 4+ client consulting engagements per month across financial services, mobility, healthcare, consumer goods, etc.</p>
+          <div class="role">Business Management Consultant</div>
+          <p class="desc">APAC strategy consulting for market entry, expansion, and investment assessment across financial services, healthcare, and consumer goods.</p>
           <ul>
-            <li>Delivered executive-level strategic proposals through industry analysis and competitor benchmarking</li>
-            <li>Supported market entry and expansion projects for B2B and B2C clients across APAC</li>
-            <li>Led China beauty market omnichannel strategy across Tmall, TikTok, Redbook, and WeChat</li>
-            <li>Evaluated market attractiveness and investment opportunities across NEV, healthcare, and consumer sectors</li>
+            <li>Managed 4+ client engagements per month in parallel, coordinating teams across Japan, China, India, and Southeast Asia from problem framing through executive-ready recommendations</li>
+            <li>Led market attractiveness and investment assessments for new energy vehicles, financial services, healthcare, and FMCG — competitive positioning, regulatory landscape, and growth scenarios for C-level decision-makers</li>
+            <li>Built a stock-market external-factor assessment for a financial services client: integrated framework, correlation/regression analysis, and medium-term growth scenarios adopted for strategic planning</li>
+            <li>Structured China PAP healthcare strategy review — market, competitor, pricing, channel, and service-model analysis — into benchmarked recommendations for business leadership</li>
+            <li>Prioritized a Japanese consumer portfolio for China entry: assessed 20+ concepts, shortlisted 10, and delivered competitor benchmarks, consumer insights, and commercialization roadmaps</li>
           </ul>
         </div>
       </div>
       <div class="exp-item">
         <div class="exp-left"><div class="company">Rakuten Group, Inc.</div><div class="period">Mar 2021 – Mar 2023</div><div class="loc">Shanghai, China</div></div>
         <div class="exp-right">
-          <div class="role">Market Entry & BD Consultant · E-commerce Growth Manager</div>
-          <p class="desc">Grew and retained a portfolio of 8+ Japanese brands to 132% of GMV and Gross Profit targets.</p>
+          <div class="role">Market Entry &amp; Business Development Consultant</div>
+          <p class="desc">China market entry and growth advisory for Japanese brands — bidding, omnichannel strategy, and cross-functional execution.</p>
+          <ul>
+            <li>Won an exclusive-distributor contract against two competing agencies within six months — owned positioning, commercial model, and P&amp;L simulation through internal approval for a color-care brand</li>
+            <li>Delivered five major consulting projects in five months solo while running parallel client work — translated regulatory, market, and competitor findings into actionable growth plans for Japanese companies entering China</li>
+            <li>Drove e-commerce growth for 8+ Japanese brands and reached 132% of GMV and gross profit targets through brand positioning, channel development, and cross-functional execution with sales, operations, media, and business management</li>
+            <li>Launched TikTok incubation for three brands at go-live — built business cases, three-year roadmap, and ROI analyses; the first activated brand achieved a 20% sales increase</li>
+            <li>Advised Japanese clients on China expansion end-to-end — regulatory and market analysis, customer and competitor insight, and structured recommendations presented to senior stakeholders</li>
+          </ul>
         </div>
       </div>
       <div class="exp-item">
         <div class="exp-left"><div class="company">YRGLM Inc.</div><div class="period">Apr 2019 – Mar 2021</div><div class="loc">Tokyo, Japan</div></div>
         <div class="exp-right">
-          <div class="role">Marketing Analyst & Business Development Specialist</div>
-          <p class="desc">Exceeded lead-generation targets by 123% and contributed to 110% YoY revenue growth.</p>
+          <div class="role">Marketing Analyst &amp; Business Development Specialist</div>
+          <p class="desc">Data-driven marketing and business development for Japanese e-commerce clients — campaign optimization, lead generation, and solution-based new business.</p>
+          <ul>
+            <li>Exceeded lead-generation targets by 123% and helped deliver 110% year-on-year revenue growth through market analysis, campaign optimization, and targeted BD initiatives</li>
+            <li>Converted 50% of qualified new-business opportunities by running needs assessments and solution-based sales conversations with Japanese e-commerce companies</li>
+            <li>Designed and executed multi-channel marketing programs that improved campaign effectiveness and tied activity directly to sales KPIs</li>
+            <li>Produced thought-leadership content — customer success stories and white papers — that fed pipeline and supported consultative selling</li>
+            <li>Identified growth segments and messaging angles from data and market signals, then aligned sales and marketing on priorities that moved revenue</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -248,7 +259,7 @@ a.hcta{text-decoration:none}
     <div class="sec-label">Education</div>
     <div class="edu-list">
       <div class="edu-item"><div><div class="edu-deg">Master of Practical Sociology Science for SDGs</div><div class="edu-school">Hokkaido University · Sapporo, Japan</div></div><div class="edu-year">2017–2019</div></div>
-      <div class="edu-item"><div><div class="edu-deg">Bachelor of Landscape Design</div><div class="edu-school">Chengdu University · Sichuan, China</div></div><div class="edu-year">2011–2015</div></div>
+      <div class="edu-item"><div><div class="edu-deg">Bachelor of Landscape Design</div><div class="edu-school">Chengdu University · Sichuan, China</div></div><div class="edu-year">2015</div></div>
     </div>
   </div>
 </div>
