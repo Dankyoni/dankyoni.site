@@ -29,11 +29,11 @@
   <text x="36"  y="242" font-size="30" font-weight="400" fill="#8B6F4E" font-family="Georgia,serif">6</text>
   <text x="36"  y="261" font-size="9.5" fill="#4a4a4a" font-family="Arial,sans-serif" letter-spacing="1.8">CATEGORIES</text>
 
-  <text x="110" y="242" font-size="30" font-weight="400" fill="#8B6F4E" font-family="Georgia,serif">~61</text>
-  <text x="110" y="261" font-size="9.5" fill="#4a4a4a" font-family="Arial,sans-serif" letter-spacing="1.8">SLIDE PACK</text>
+  <text x="150" y="242" font-size="30" font-weight="400" fill="#8B6F4E" font-family="Georgia,serif">~61</text>
+  <text x="150" y="261" font-size="9.5" fill="#4a4a4a" font-family="Arial,sans-serif" letter-spacing="1.8">SLIDE PACK</text>
 
-  <text x="210" y="242" font-size="30" font-weight="400" fill="#8B6F4E" font-family="Georgia,serif">6 mo.</text>
-  <text x="210" y="261" font-size="9.5" fill="#4a4a4a" font-family="Arial,sans-serif" letter-spacing="1.8">PROGRAM</text>
+  <text x="258" y="242" font-size="30" font-weight="400" fill="#8B6F4E" font-family="Georgia,serif">6 mo.</text>
+  <text x="258" y="261" font-size="9.5" fill="#4a4a4a" font-family="Arial,sans-serif" letter-spacing="1.8">PROGRAM</text>
 
   <!-- Bottom bar -->
   <rect x="0" y="340" width="600" height="40" fill="#0d0d0d"/>
