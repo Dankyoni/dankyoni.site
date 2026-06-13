@@ -260,6 +260,24 @@ a.hcta{text-decoration:none}
 .outcome-label{font-size:13px;font-weight:500;margin-bottom:.3rem}
 .outcome-desc{font-size:12px;color:var(--muted);line-height:1.65}
 
+/* === BRAND BENCHMARK CARDS === */
+.bench-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:1.5rem 0}
+.bench-card{border:1px solid var(--border);overflow:hidden}
+.bench-card.focal{border-color:var(--accent);border-width:2px}
+.bench-head{padding:1rem 1.3rem;background:var(--tag)}
+.bench-card.focal .bench-head{background:var(--accent)}
+.bench-label{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#aaa;margin-bottom:.3rem}
+.bench-card.focal .bench-label{color:rgba(255,255,255,.65)}
+.bench-brand{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink)}
+.bench-card.focal .bench-brand{color:var(--white)}
+.bench-row{padding:.7rem 1.3rem;border-bottom:1px solid var(--border)}
+.bench-row:last-child{border-bottom:none}
+.bench-dim{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#bbb;margin-bottom:.2rem}
+.bench-val{font-size:12.5px;color:var(--ink);line-height:1.5}
+.bench-bar{height:3px;background:var(--border);margin-top:.5rem;overflow:hidden}
+.bench-fill{height:100%;background:var(--accent)}
+.bench-ks{font-size:11px;font-style:italic;color:var(--accent)}
+
 .skills-wrap{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .su{font-size:11px;padding:.3rem .8rem;background:var(--tag);border-radius:2px}
 </style>
@@ -397,6 +415,35 @@ a.hcta{text-decoration:none}
         <div class="finding-tag">Regulatory</div>
         <div class="finding-title">Claims architecture matters before page creation</div>
         <div class="finding-desc">PRC Advertising Law limits sleep/aroma efficacy language and prohibits medical-adjacent claims. Front-loading the claims architecture — including test-institution citation paths — prevented costly page-creation rework downstream.</div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.4rem;font-size:13px;color:#444;line-height:1.9">The competitive gap finding connects directly to how leading brands are structured commercially — three profiles shaped the channel and positioning recommendations across all six categories:</p>
+
+    <div class="bench-grid">
+      <div class="bench-card focal">
+        <div class="bench-head"><div class="bench-label">Focal Brand</div><div class="bench-brand">Client Brand (Japanese)</div></div>
+        <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~60% offline / ~40% Tmall</div><div class="bench-bar"><div class="bench-fill" style="width:40%"></div></div></div>
+        <div class="bench-row"><div class="bench-dim">Traffic Model</div><div class="bench-val">Standard search / limited SNS</div></div>
+        <div class="bench-row"><div class="bench-dim">SKU Iteration</div><div class="bench-val">Annual / seasonal cycle</div></div>
+        <div class="bench-row"><div class="bench-dim">Price Band</div><div class="bench-val">Mid-premium (¥98–328)</div></div>
+        <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">Japanese quality + offline depth</div></div>
+      </div>
+      <div class="bench-card">
+        <div class="bench-head"><div class="bench-label">EC-Native Domestic Leader</div><div class="bench-brand">Category Challenger</div></div>
+        <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~90% online (Tmall + TikTok)</div><div class="bench-bar"><div class="bench-fill" style="width:90%"></div></div></div>
+        <div class="bench-row"><div class="bench-dim">Traffic Model</div><div class="bench-val">~80% KOL / content-first</div></div>
+        <div class="bench-row"><div class="bench-dim">SKU Iteration</div><div class="bench-val">Monthly → bi-weekly (fast)</div></div>
+        <div class="bench-row"><div class="bench-dim">Price Band</div><div class="bench-val">Accessible premium (¥39–199)</div></div>
+        <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">Content velocity + social reach</div></div>
+      </div>
+      <div class="bench-card">
+        <div class="bench-head"><div class="bench-label">Premium International Brand</div><div class="bench-brand">Global Challenger</div></div>
+        <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~65% online / ~35% offline KA</div><div class="bench-bar"><div class="bench-fill" style="width:65%"></div></div></div>
+        <div class="bench-row"><div class="bench-dim">Traffic Model</div><div class="bench-val">Brand campaign + select KOL</div></div>
+        <div class="bench-row"><div class="bench-dim">SKU Iteration</div><div class="bench-val">Seasonal / limited editions</div></div>
+        <div class="bench-row"><div class="bench-dim">Price Band</div><div class="bench-val">Premium (¥198–698)</div></div>
+        <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">Heritage + global scent IP</div></div>
       </div>
     </div>
   </div>
