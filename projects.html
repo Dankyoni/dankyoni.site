@@ -21,71 +21,46 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 1.1rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none;display:flex;align-items:center}
 .tab:hover{color:var(--ink)}
 .tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
-.page{animation:fi .22s ease}
 
-@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-.hero{padding:4.5rem 2.8rem 3.5rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center}
-.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem;display:flex;align-items:center;gap:.6rem}
-.eyebrow::before{content:'';width:18px;height:.5px;background:var(--muted);display:inline-block}
-.hero h1{font-family:var(--serif);font-size:3.4rem;font-weight:400;line-height:1.1;margin-bottom:1.1rem}
-.hero h1 em{font-style:italic;color:#666}
-.hero-desc{color:var(--muted);font-size:13px;line-height:1.9;max-width:380px;margin-bottom:1.8rem}
-.btns{display:flex;gap:.9rem}
-.btn1{font-family:var(--sans);font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:.65rem 1.5rem;background:var(--ink);color:var(--white);border:none;cursor:pointer;transition:background .2s}
-.btn1:hover{background:#333}
-.btn2{font-family:var(--sans);font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:.65rem 1.5rem;background:none;color:var(--ink);border:1px solid var(--border);cursor:pointer;transition:border-color .2s}
-.btn2:hover{border-color:#999}
-.stats-box{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin-bottom:1.2rem}
-.sbox{background:var(--white);padding:1.4rem;text-align:center}
-.snum{font-family:var(--serif);font-size:2.2rem;font-weight:400}
-.slabel{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:2px}
-.skills{display:flex;flex-wrap:wrap;gap:.4rem}
-.sk{font-size:11px;padding:.3rem .8rem;background:var(--tag);border-radius:2px}
-.section{padding:3rem 2.8rem;border-bottom:1px solid var(--border)}
-.sec-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;display:flex;align-items:center;gap:.6rem}
-.sec-label::after{content:'';width:28px;height:.5px;background:var(--border);display:inline-block}
-.exp-list{display:flex;flex-direction:column}
-.exp-item{padding:1.75rem 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:200px 1fr;gap:2rem}
-.exp-item:last-child{border-bottom:none}
-.exp-left .company{font-weight:500;font-size:14px;margin-bottom:.2rem}
-.exp-left .period{font-size:12px;color:var(--muted)}
-.exp-left .loc{font-size:11px;color:#aaa;margin-top:.2rem}
-.exp-right .role{font-family:var(--serif);font-size:1.05rem;font-weight:400;margin-bottom:.5rem}
-.exp-right .desc{font-size:13px;color:var(--muted);line-height:1.8}
-.exp-right ul{margin-top:.6rem;padding-left:1.1rem;display:flex;flex-direction:column;gap:.3rem}
-.exp-right ul li{font-size:12px;color:var(--muted);line-height:1.7}
-.lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
-.lang-box{background:var(--white);padding:1.25rem;text-align:center}
-.lang-name{font-size:13px;font-weight:500;margin-bottom:.2rem}
-.lang-level{font-size:11px;color:var(--muted)}
-.edu-list{display:flex;flex-direction:column;gap:1.2rem}
-.edu-item{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:1.2rem;border-bottom:1px solid var(--border)}
-.edu-item:last-child{border-bottom:none;padding-bottom:0}
-.edu-deg{font-size:13px;font-weight:500}
-.edu-school{font-size:12px;color:var(--muted);margin-top:.15rem}
-.edu-year{font-size:12px;color:var(--muted);white-space:nowrap;margin-left:1rem}
-.page-head{padding:3rem 2.8rem 2rem;border-bottom:1px solid var(--border)}
+/* === PAGE HEAD === */
+.page-head{padding:3rem 2.8rem 2.5rem;border-bottom:1px solid var(--border);background:var(--white)}
 .page-head h2{font-family:var(--serif);font-size:2rem;font-weight:400;margin-bottom:.35rem}
-.page-head p{color:var(--muted);font-size:13px;max-width:540px}
-.filter-row{padding:0 2.8rem;display:flex;gap:0;border-bottom:2px solid var(--border);background:var(--white)}
-.fb{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 2rem;height:50px;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;background:none;color:var(--muted);cursor:pointer;transition:all .2s;white-space:nowrap}
-.fb:hover{color:var(--ink)}
-.fb.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
-.pgrid{padding:2.5rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.pcard{background:var(--white);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.pcard:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.06)}
-.pcard.wide{grid-column:span 2}
-.ptop{height:4px}
-.pbody{padding:1.75rem;flex:1}
-.ptag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
-.ptitle{font-family:var(--serif);font-size:1.2rem;font-weight:400;line-height:1.3;margin-bottom:.65rem}
-.pdesc{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:1.2rem}
-.pmets{display:flex;gap:1.4rem}
-.pm{border-left:2px solid var(--tag);padding-left:.7rem}
-.pmv{font-family:var(--serif);font-size:1.15rem}
-.pml{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.pfoot{border-top:1px solid var(--border);padding:.9rem 1.75rem;display:flex;justify-content:space-between;align-items:center}
-.sw-list{padding:0 2.8rem 4rem}
+.page-head p{color:var(--muted);font-size:13px;max-width:580px}
+
+/* === SECTION HEADERS === */
+.sec-band{padding:2.8rem 2.8rem 0}
+.sec-band-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;display:flex;align-items:center;gap:.6rem}
+.sec-band-label::after{content:'';width:28px;height:.5px;background:var(--border);display:inline-block}
+.sec-band h2{font-family:var(--serif);font-size:1.6rem;font-weight:400;line-height:1.25}
+
+/* === ROLE PROFILES SECTION === */
+.roles-sec{background:var(--white)}
+.role-list{padding:2rem 2.8rem 4rem;display:flex;flex-direction:column;gap:1.2rem}
+.role-card{border:1px solid var(--border);overflow:hidden}
+.role-stripe{height:3px}
+.role-inner{padding:2.2rem 2.4rem 2.2rem;display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start}
+.role-tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#999;margin-bottom:.6rem}
+.role-title{font-family:var(--serif);font-size:1.35rem;font-weight:400;line-height:1.25;margin-bottom:.75rem}
+.role-desc{font-size:12.5px;color:#444;line-height:1.85;margin-bottom:1.4rem}
+.role-caps{display:flex;flex-direction:column;gap:.75rem}
+.rc{display:flex;gap:.75rem;align-items:flex-start}
+.rc-n{min-width:20px;height:20px;background:var(--tag);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;color:var(--ink);flex-shrink:0;margin-top:2px}
+.rc-t{font-size:12px;font-weight:500;color:var(--ink);margin-bottom:1px}
+.rc-s{font-size:11px;color:var(--muted)}
+.role-stats{display:flex;flex-direction:column;gap:1.3rem}
+.rs{padding-left:1rem;border-left:2px solid var(--accent)}
+.rs-num{font-family:var(--serif);font-size:1.9rem;font-weight:400;line-height:1;color:var(--ink);display:block;margin-bottom:.2rem}
+.rs-lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#aaa}
+
+/* === DIVIDER BAND === */
+.div-band{background:var(--ink);padding:2.8rem 2.8rem;display:flex;justify-content:space-between;align-items:center;gap:2rem}
+.div-band h2{font-family:var(--serif);font-size:1.6rem;font-weight:400;color:var(--white)}
+.div-band p{font-size:12.5px;color:#888;max-width:460px;line-height:1.75}
+.div-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#555;margin-bottom:.5rem}
+
+/* === SELECTED WORK SECTION === */
+.work-sec{background:var(--light)}
+.sw-list{padding:1rem 2.8rem 4rem}
 .sw-item{display:grid;grid-template-columns:60px 1fr;gap:2rem;padding:2.2rem 0;border-bottom:1px solid var(--border);cursor:pointer;transition:background .18s;margin:0 -2.8rem;padding-left:2.8rem;padding-right:2.8rem}
 .sw-item:first-child{border-top:1px solid var(--border)}
 .sw-item:hover{background:var(--white)}
@@ -102,75 +77,8 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .sw-cta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.35rem;font-weight:500;flex-shrink:0}
 .sw-cta i{transition:transform .2s}
 .sw-item:hover .sw-cta i{transform:translateX(3px)}
-.pscope{font-size:11px;color:var(--muted)}
-.badge{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .65rem}
-.b-past{background:#fff8e1;color:#8a6d00}
-.agrid{padding:2.5rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-.acard{background:var(--white);border:1px solid var(--border);padding:1.6rem;cursor:pointer;transition:transform .2s,box-shadow .2s}
-.acard:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.06)}
-.acard.wide{grid-column:span 2;display:flex;gap:1.8rem;align-items:flex-start}
-.anum{font-family:var(--serif);font-size:3rem;font-weight:300;color:var(--tag);line-height:1;flex-shrink:0;margin-top:.1rem}
-.alabel{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:.65rem}
-.atitle{font-family:var(--serif);font-size:1rem;font-weight:400;line-height:1.4;margin-bottom:.55rem}
-.acard.wide .atitle{font-size:1.25rem;line-height:1.3}
-.aexcerpt{font-size:12px;color:var(--muted);line-height:1.75;margin-bottom:1rem}
-.ameta{font-size:11px;color:#aaa}
-.amore{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:.3rem;margin-top:.65rem;font-weight:500}
-.cwrap{padding:4rem 2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.cleft h2{font-family:var(--serif);font-size:2.3rem;font-weight:400;line-height:1.2;margin-bottom:.9rem}
-.cleft p{color:var(--muted);font-size:13px;line-height:1.85;max-width:290px;margin-bottom:1.5rem}
-.cnote{font-size:12px;padding:1.1rem 1.25rem;border:1px solid var(--border);background:var(--white);line-height:1.7}
-.citems{display:flex;flex-direction:column;gap:.7rem}
-.ci{display:flex;align-items:center;gap:1rem;padding:1.15rem 1.4rem;background:var(--white);border:1px solid var(--border);transition:border-color .2s;cursor:pointer}
-.ci:hover{border-color:#aaa}
-.ci-icon{font-size:18px;color:#555}
-.ci-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.ci-val{font-size:13px;font-weight:500}
-#p-casestudy{background:var(--white)}
-.cs-hero{padding:3.5rem 2.8rem;border-bottom:1px solid var(--border);background:var(--ink);color:var(--white)}
-.cs-back{display:inline-flex;align-items:center;gap:.5rem;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aaa;cursor:pointer;margin-bottom:1.5rem;background:none;border:none;font-family:var(--sans)}
-.cs-back:hover{color:var(--white)}
-.cs-eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#888;margin-bottom:.75rem}
-.cs-hero h1{font-family:var(--serif);font-size:2.6rem;font-weight:400;line-height:1.15;max-width:700px;margin-bottom:1rem;color:var(--white)}
-.cs-hero h1 em{font-style:italic;color:#ccc}
-.cs-meta{display:flex;gap:2.5rem;flex-wrap:wrap;margin-top:1.5rem}
-.cs-meta-item{font-size:12px;color:#aaa}
-.cs-meta-item strong{color:#ddd;display:block;font-size:13px;margin-bottom:.1rem}
-.cs-disclaimer{display:inline-block;margin-top:1.5rem;font-size:11px;padding:.45rem 1rem;border:1px solid #333;color:#888;letter-spacing:.06em}
-.cs-body{max-width:900px;margin:0 auto;padding:3rem 2.8rem}
-.cs-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--border)}
-.cs-section:last-child{border-bottom:none}
-.cs-section-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem}
-.cs-section-label::after{content:'';width:24px;height:.5px;background:var(--border);display:inline-block}
-.cs-section h2{font-family:var(--serif);font-size:1.6rem;font-weight:400;margin-bottom:1rem;line-height:1.25}
-.cs-section p{font-size:13px;color:#444;line-height:1.9;margin-bottom:.9rem}
-.cs-chart-wrap{margin:1.5rem 0;background:var(--light);border:1px solid var(--border);padding:1.5rem}
-.cs-chart-title{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
-.bar-row{display:flex;align-items:center;gap:.75rem;margin-bottom:.7rem}
-.bar-label{font-size:12px;min-width:140px;color:var(--ink);text-align:right}
-.bar-track{flex:1;height:28px;background:#ece9e4;border-radius:1px;overflow:hidden}
-.bar-fill{height:100%;display:flex;align-items:center;padding-left:.6rem;font-size:11px;font-weight:500;color:var(--white)}
-.bar-val{font-size:12px;color:var(--muted);min-width:60px}
-.cs-grid{display:grid;gap:1px;background:var(--border);margin:1.5rem 0}
-.cs-grid-cell{background:var(--white);padding:1.25rem}
-.cs-grid-cell.head{background:var(--ink);color:var(--white)}
-.cgc-title{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
-.cs-grid-cell.head .cgc-title{color:#aaa}
-.cgc-val{font-size:13px;font-weight:500;line-height:1.5}
-.price-band{display:flex;flex-direction:column;gap:.5rem;margin:1.5rem 0}
-.pb-row{display:flex;align-items:center;gap:.75rem}
-.pb-range{font-size:12px;min-width:120px;color:var(--ink);text-align:right;font-weight:500}
-.pb-track{flex:1;height:22px;background:#ece9e4;overflow:hidden}
-.pb-fill{height:100%;display:flex;align-items:center;padding-left:.5rem;font-size:11px;color:var(--white)}
-.pb-brands{font-size:11px;color:var(--muted);min-width:200px}
-.insight-box{background:var(--light);border-left:3px solid var(--ink);padding:1.1rem 1.3rem;margin:1.2rem 0;font-size:13px;color:#333;line-height:1.75}
-.cs-findings{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin:1.5rem 0}
-.cs-finding{background:var(--white);padding:1.4rem}
-.cs-finding-num{font-family:var(--serif);font-size:1.8rem;color:var(--tag);margin-bottom:.3rem}
-.cs-finding-title{font-size:13px;font-weight:500;margin-bottom:.3rem}
-.cs-finding-desc{font-size:12px;color:var(--muted);line-height:1.7}
-.skills-used{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
-.su{font-size:11px;padding:.3rem .8rem;background:var(--tag);border-radius:2px}
+
+/* === DRAWER === */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.38);z-index:50;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .22s}
 .overlay.open{opacity:1;pointer-events:all}
 .drawer{background:var(--white);width:100%;max-height:82vh;overflow-y:auto;padding:2.5rem 2.8rem;border-top:2px solid var(--ink);transform:translateY(14px);transition:transform .22s;position:relative}
@@ -184,22 +92,16 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .dph-n{width:22px;height:22px;border-radius:50%;background:var(--tag);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;flex-shrink:0;margin-top:2px}
 .dph-title{font-size:13px;font-weight:500}
 .dph-sub{font-size:12px;color:var(--muted)}
+
 footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(--white);display:flex;justify-content:space-between;align-items:center}
 .fcopy{font-size:12px;color:var(--muted)}
 .ftop{background:none;border:none;font-size:12px;color:var(--muted);cursor:pointer;font-family:var(--sans)}
 
 @media(max-width:700px){
-  .agrid{grid-template-columns:1fr;padding:1.5rem 1.2rem}
-  .acard.wide{grid-column:span 1;flex-direction:column;gap:.5rem}
-  .anum{font-size:2rem}
+  .role-inner{grid-template-columns:1fr;gap:1.5rem}
+  .div-band{flex-direction:column;align-items:flex-start;gap:1rem}
+  .header-nav .tab{padding:0 .7rem;font-size:11px}
 }
-
-a.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
-padding:.95rem 1.4rem;color:var(--muted);border-bottom:2px solid transparent;
-transition:all .2s;white-space:nowrap;text-decoration:none;display:inline-block}
-a.tab:hover{color:var(--ink)}
-a.logo{text-decoration:none;color:var(--ink)}
-a.hcta{text-decoration:none}
 </style>
 </head>
 <body>
@@ -214,56 +116,134 @@ a.hcta{text-decoration:none}
     <a href="contact.html" class="tab">Contact</a>
   </nav>
 </header>
-<div class="page-head"><h2>Projects</h2><p>Selected work, methodology frameworks, and target role profiles — drawn from 5+ years in consulting, account management, and e-commerce growth across APAC.</p></div>
-  <div class="filter-row">
-    <button class="fb on" onclick="sw('roles',this)">Role Profiles</button>
-    <button class="fb" onclick="sw('work',this)">Selected Work &amp; Methodology</button>
+
+<div class="page-head">
+  <h2>Projects</h2>
+  <p>Target role profiles and selected methodology work — drawn from 5+ years in consulting, account management, and e-commerce growth across APAC.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1: ROLE PROFILES
+════════════════════════════════════════════ -->
+<div class="roles-sec">
+  <div class="sec-band">
+    <div class="sec-band-label">Section 01</div>
+    <h2>Role Profiles</h2>
   </div>
-  <div id="sec-roles" class="pgrid">
-    <div class="pcard wide" data-cat="consulting" onclick="od(0)">
-      <div class="ptop" style="background:linear-gradient(90deg,#222,#555)"></div>
-      <div class="pbody">
-        
-        <h3 class="ptitle">International Strategy & Business Development</h3>
-        <p class="pdesc">Delivered client-facing consulting in market entry strategy, growth advisory, and cross-border expansion across APAC and Europe.</p>
-        <div class="pmets">
-          <div class="pm"><div class="pmv">5+</div><div class="pml">Years Consulting</div></div>
-          <div class="pm"><div class="pmv">4+</div><div class="pml">Projects/Month</div></div>
-          <div class="pm"><div class="pmv">APAC</div><div class="pml">Core Market</div></div>
+
+  <div class="role-list">
+
+    <!-- Card 1: International Strategy & BD -->
+    <div class="role-card">
+      <div class="role-stripe" style="background:linear-gradient(90deg,#222,#666)"></div>
+      <div class="role-inner">
+        <div>
+          <div class="role-tag">Market Entry &amp; Expansion Consulting</div>
+          <h3 class="role-title">International Strategy &amp; Business Development</h3>
+          <p class="role-desc">Delivered client-facing consulting in market entry strategy, growth advisory, and cross-border expansion across APAC and Europe. Background spans structured problem-solving, executive-level proposal delivery, and multi-stakeholder coordination across Japan, China, India, and Southeast Asia.</p>
+          <div class="role-caps">
+            <div class="rc">
+              <div class="rc-n">1</div>
+              <div><div class="rc-t">Market Intelligence &amp; Scoping</div><div class="rc-s">market sizing, regulatory mapping, competitive benchmarking</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">2</div>
+              <div><div class="rc-t">Strategic Proposal Development</div><div class="rc-s">executive packs covering growth scenarios and go-to-market options</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">3</div>
+              <div><div class="rc-t">Cross-functional Delivery</div><div class="rc-s">coordinating teams across geographies for on-time project outcomes</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="role-stats">
+          <div class="rs"><span class="rs-num">5+</span><span class="rs-lbl">Years Consulting</span></div>
+          <div class="rs"><span class="rs-num">4+</span><span class="rs-lbl">Projects / Month</span></div>
+          <div class="rs"><span class="rs-num">APAC</span><span class="rs-lbl">Core Market</span></div>
         </div>
       </div>
-      
     </div>
-    <div class="pcard" data-cat="account" onclick="od(1)">
-      <div class="ptop" style="background:#333"></div>
-      <div class="pbody">
-        
-        <h3 class="ptitle">Key Account Management</h3>
-        <p class="pdesc">Seeking KAM or partnership roles centred on client advisory, portfolio expansion, and cross-border coordination.</p>
-        <div class="pmets">
-          <div class="pm"><div class="pmv">132%</div><div class="pml">GMV Achieved</div></div>
+
+    <!-- Card 2: Key Account Management -->
+    <div class="role-card">
+      <div class="role-stripe" style="background:#8B6F4E"></div>
+      <div class="role-inner">
+        <div>
+          <div class="role-tag">Account &amp; Partnership Management</div>
+          <h3 class="role-title">Key Account Management</h3>
+          <p class="role-desc">Built trusted client relationships through strategic KAM and partnership management — driving portfolio growth and managing complex cross-border accounts. Grew an 8-brand portfolio to 132% of GMV and gross profit targets at Rakuten Group within 6 months.</p>
+          <div class="role-caps">
+            <div class="rc">
+              <div class="rc-n">1</div>
+              <div><div class="rc-t">Relationship Building &amp; Advisory</div><div class="rc-s">structured advisory and executive-level engagement</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">2</div>
+              <div><div class="rc-t">Portfolio Expansion</div><div class="rc-s">upsell opportunities through market intelligence and competitive analysis</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">3</div>
+              <div><div class="rc-t">Cross-border Coordination</div><div class="rc-s">aligning internal teams and client stakeholders across APAC</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="role-stats">
+          <div class="rs"><span class="rs-num">8</span><span class="rs-lbl">Key Accounts · 6 months</span></div>
+          <div class="rs"><span class="rs-num">132%</span><span class="rs-lbl">GMV vs. Target</span></div>
         </div>
       </div>
-      
     </div>
-    <div class="pcard" data-cat="ecommerce" onclick="od(2)">
-      <div class="ptop" style="background:#666"></div>
-      <div class="pbody">
-        
-        <h3 class="ptitle">E-commerce Growth Management / Marketplace Management</h3>
-        <p class="pdesc">Drove e-commerce growth and marketplace management spanning Tmall, TikTok, JD, Redbook, and cross-border commerce.</p>
-        <div class="pmets">
-          <div class="pm"><div class="pmv">3</div><div class="pml">Brands Launched</div></div>
-          <div class="pm"><div class="pmv">+20%</div><div class="pml">Sales on Launch</div></div>
+
+    <!-- Card 3: E-commerce Growth -->
+    <div class="role-card">
+      <div class="role-stripe" style="background:#444"></div>
+      <div class="role-inner">
+        <div>
+          <div class="role-tag">E-commerce Growth</div>
+          <h3 class="role-title">E-commerce Growth Management / Marketplace Management</h3>
+          <p class="role-desc">Drove e-commerce growth and marketplace management where channel strategy connected directly to measurable commercial uplift. Experience spanning Tmall, TikTok, JD, Redbook, and cross-border commerce.</p>
+          <div class="role-caps">
+            <div class="rc">
+              <div class="rc-n">1</div>
+              <div><div class="rc-t">Channel Strategy &amp; Architecture</div><div class="rc-s">defining roles across Tmall, TikTok, Redbook, WeChat</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">2</div>
+              <div><div class="rc-t">Category &amp; Product Growth</div><div class="rc-s">portfolio prioritisation and hero-product development</div></div>
+            </div>
+            <div class="rc">
+              <div class="rc-n">3</div>
+              <div><div class="rc-t">Launch Execution &amp; Optimisation</div><div class="rc-s">ROI modelling, cross-functional alignment, performance tracking</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="role-stats">
+          <div class="rs"><span class="rs-num">3</span><span class="rs-lbl">Brands Launched</span></div>
+          <div class="rs"><span class="rs-num">+20%</span><span class="rs-lbl">Sales on Launch</span></div>
         </div>
       </div>
-      
     </div>
+
   </div>
 </div>
-<div id="sec-work" style="display:none">
+
+<!-- ═══════════════════════════════════════════
+     DIVIDER
+════════════════════════════════════════════ -->
+<div class="div-band">
+  <div>
+    <div class="div-label">Section 02</div>
+    <h2>Selected Work &amp; Methodology</h2>
+  </div>
+  <p>Frameworks and projects from consulting engagements, account management, and e-commerce growth — showing how I approach problems from first principles.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2: SELECTED WORK
+════════════════════════════════════════════ -->
+<div class="work-sec">
   <div class="sw-list">
-    <div class="sw-item" onclick="od(3)">
+    <div class="sw-item" onclick="od(0)">
       <div class="sw-left"><div class="sw-num">01</div><div class="sw-bar"></div></div>
       <div class="sw-right">
         <div class="sw-tag">Methodology · Consulting</div>
@@ -278,7 +258,7 @@ a.hcta{text-decoration:none}
         </div>
       </div>
     </div>
-    <div class="sw-item" onclick="od(4)">
+    <div class="sw-item" onclick="od(1)">
       <div class="sw-left"><div class="sw-num">02</div><div class="sw-bar"></div></div>
       <div class="sw-right">
         <div class="sw-tag">E-commerce · Channel Launch</div>
@@ -293,22 +273,22 @@ a.hcta{text-decoration:none}
         </div>
       </div>
     </div>
-    <div class="sw-item" onclick="od(5)">
+    <div class="sw-item" onclick="od(2)">
       <div class="sw-left"><div class="sw-num">03</div><div class="sw-bar"></div></div>
       <div class="sw-right">
         <div class="sw-tag">Methodology · Account Management</div>
         <h3 class="sw-title">KAM Account Tiering &amp; Portfolio Prioritisation</h3>
-        <p class="sw-desc">A 2×2 framework mapping revenue potential against relationship depth — used to manage an 8+ brand portfolio to 132% of GMV target at Rakuten Group.</p>
+        <p class="sw-desc">A 2×2 framework mapping revenue potential against relationship depth — used to manage an 8-brand portfolio to 132% of GMV target at Rakuten Group.</p>
         <div class="sw-bottom">
           <div class="sw-facts">
-            <div class="sw-fact"><strong>8+</strong><span>Brands Managed</span></div>
+            <div class="sw-fact"><strong>8</strong><span>Brands Managed</span></div>
             <div class="sw-fact"><strong>132%</strong><span>GMV vs. Target</span></div>
           </div>
           <div class="sw-cta">View Framework <i class="ti ti-arrow-right"></i></div>
         </div>
       </div>
     </div>
-    <div class="sw-item" onclick="od(6)">
+    <div class="sw-item" onclick="od(3)">
       <div class="sw-left"><div class="sw-num">04</div><div class="sw-bar"></div></div>
       <div class="sw-right">
         <div class="sw-tag">Market Research · Consulting</div>
@@ -325,6 +305,7 @@ a.hcta{text-decoration:none}
     </div>
   </div>
 </div>
+
 <div class="overlay" id="ov" onclick="if(event.target===this)cd()">
   <div class="drawer">
     <button class="dclose" onclick="cd()"><i class="ti ti-x"></i></button>
@@ -334,35 +315,19 @@ a.hcta{text-decoration:none}
     <div class="dphases" id="dd-phases"></div>
   </div>
 </div>
+
 <footer>
   <div class="fcopy">© 2026 Dan Xu</div>
   <button class="ftop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
 </footer>
-<script>
-function go(name){
-  const map = {
-    'about':'index.html','experience':'experience.html',
-    'projects':'projects.html','casestudy':'casestudy.html',
-    'articles':'articles.html','contact':'contact.html'
-  };
-  if(map[name]) window.location=map[name];
-}
 
+<script>
 const drawerData=[
-  {tag:"Market Entry & Expansion Consulting",title:"International Strategy & Business Development",body:"Delivered client-facing consulting centred on market entry strategy, growth advisory, and cross-border expansion across APAC and European markets. My background spans structured problem-solving, executive-level proposal delivery, and multi-stakeholder coordination across Japan, China, India, and Southeast Asia.",phases:["Market Intelligence & Scoping — market sizing, regulatory mapping, competitive benchmarking","Strategic Proposal Development — executive packs covering growth scenarios and go-to-market options","Cross-functional Delivery — coordinating teams across geographies for on-time project outcomes"]},
-  {tag:"Account & Partnership Management",title:"Key Account Management",body:"Built trusted client relationships through strategic KAM and partnership management,, driving portfolio growth, and managing complex cross-border accounts are central. Grew 8+ brand portfolio to 132% of GMV and gross profit targets at Rakuten Group.",phases:["Relationship Building & Advisory — structured advisory and executive-level engagement","Portfolio Expansion — upsell opportunities through market intelligence and competitive analysis","Cross-border Coordination — aligning internal teams and client stakeholders across APAC"]},
-  {tag:"E-commerce Growth",title:"E-commerce Growth Management / Marketplace Management",body:"Drove e-commerce growth and marketplace management where channel strategy connected directly to measurable commercial uplift. Experience spanning Tmall, TikTok, JD, Redbook, and cross-border commerce.",phases:["Channel Strategy & Architecture — defining roles across Tmall, TikTok, Redbook, WeChat","Category & Product Growth — portfolio prioritisation and hero-product development","Launch Execution & Optimisation — ROI modelling, cross-functional alignment, performance tracking"]},
   {tag:"Methodology · Market Entry Consulting",title:"Market Entry Evaluation Framework",body:"A structured 5-stage framework developed and applied across 4+ concurrent consulting engagements at Nomura Research Institute Shanghai. Used to assess new market opportunities end-to-end — from initial sizing through financial scenario modelling — for C-level decision-making in financial services, healthcare, consumer goods, and NEV sectors.",phases:["Market Sizing & Opportunity Scoping — TAM/SAM/SOM modelling, category growth trends, addressable segment definition","Regulatory & Entry Barrier Scan — licensing requirements, distribution restrictions, compliance landscape, local partnership needs","Competitor Positioning Map — market share analysis, pricing strategy, channel architecture, key brand differentiators","Go-to-Market Channel Model — online vs. offline split, platform selection (Tmall/JD/TikTok), distributor vs. direct options","Financial Scenario Planning — Year 1–3 P&L modelling, investment phasing, break-even analysis, sensitivity testing"]},
   {tag:"E-commerce · TikTok Commerce",title:"TikTok Commerce Incubation — Japanese Brands in China",body:"Led TikTok incubation for three Japanese brands at Rakuten Group, from zero to live. Built business cases, three-year roadmaps, and ROI analyses, then coordinated cross-functional teams through go-live. The first activated brand achieved a 20% sales increase at launch — validating the incubation model for the remaining two brands.",phases:["Business Case & ROI Modelling — investment scenarios, payback period, Year 1–3 projections per brand","Platform Strategy — content architecture, KOL seeding plan, livestream cadence, hero product selection","Cross-functional Coordination — aligning sales, operations, content, and business management teams","Launch Execution — go-live playbook, performance dashboard setup, post-launch optimisation loops"]},
-  {tag:"Methodology · Account Management",title:"KAM Account Tiering & Portfolio Prioritisation",body:"A practical account prioritisation framework applied across an 8+ brand portfolio at Rakuten Group, driving GMV and gross profit to 132% of target. The 2×2 matrix maps Revenue Potential against Relationship Depth to assign differentiated management strategies — ensuring effort is concentrated where it creates the most commercial value.",phases:["Tier A — Grow: High potential + strong relationship. Primary investment: deep advisory, co-planning, joint campaigns.","Tier B — Protect: High potential + developing relationship. Goal: build trust, increase share of wallet incrementally.","Tier C — Develop: Lower potential + strong relationship. Leverage trust to identify adjacent or upsell opportunities.","Tier D — Monitor: Lower potential + thin relationship. Maintain service efficiently; deprioritise active resource spend."]},
+  {tag:"Methodology · Account Management",title:"KAM Account Tiering & Portfolio Prioritisation",body:"A practical account prioritisation framework applied across an 8-brand portfolio at Rakuten Group, driving GMV and gross profit to 132% of target. The 2×2 matrix maps Revenue Potential against Relationship Depth to assign differentiated management strategies.",phases:["Tier A — Grow: High potential + strong relationship. Primary investment: deep advisory, co-planning, joint campaigns.","Tier B — Protect: High potential + developing relationship. Goal: build trust, increase share of wallet incrementally.","Tier C — Develop: Lower potential + strong relationship. Leverage trust to identify adjacent or upsell opportunities.","Tier D — Monitor: Lower potential + thin relationship. Maintain service efficiently; deprioritise active resource spend."]},
   {tag:"Market Research · China Market Entry",title:"Japan-to-China Consumer Portfolio Assessment",body:"At Nomura Research Institute Shanghai, led the prioritisation of a Japanese consumer goods portfolio for China market entry. Assessed 20+ product concepts across market attractiveness, competitive intensity, and consumer fit — shortlisting 10 with full competitor benchmarks, consumer insights, and commercialisation roadmaps delivered to the client's China leadership team.",phases:["Portfolio Scoping — 20+ concepts screened against market size, competitive density, and regulatory feasibility","Consumer & Competitor Benchmarking — category analysis, brand positioning map, pricing architecture, channel strategy","Shortlist Evaluation — 10 concepts ranked by entry difficulty, revenue potential, and strategic fit with client capabilities","Commercialisation Roadmap — go-to-market sequencing, platform prioritisation, Year 1 KPIs, resource requirements"]}
 ];
-function sw(id,btn){
-  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
-  btn.classList.add('on');
-  document.getElementById('sec-roles').style.display=id==='roles'?'grid':'none';
-  document.getElementById('sec-work').style.display=id==='work'?'block':'none';
-}
 function od(i){
   const d=drawerData[i];
   document.getElementById('dd-tag').textContent=d.tag;
