@@ -168,6 +168,45 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 .dph-n{width:22px;height:22px;border-radius:50%;background:var(--tag);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;flex-shrink:0;margin-top:2px}
 .dph-title{font-size:13px;font-weight:500}
 .dph-sub{font-size:12px;color:var(--muted)}
+/* === BENCHMARK CARDS === */
+.bench-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:1.5rem 0}
+.bench-card{border:1px solid var(--border);overflow:hidden}
+.bench-card.focal{border-color:var(--accent);border-width:2px}
+.bench-head{padding:1rem 1.3rem;background:var(--tag)}
+.bench-card.focal .bench-head{background:var(--accent)}
+.bench-label{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#aaa;margin-bottom:.3rem}
+.bench-card.focal .bench-label{color:rgba(255,255,255,.65)}
+.bench-brand{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink)}
+.bench-card.focal .bench-brand{color:var(--white)}
+.bench-row{padding:.7rem 1.3rem;border-bottom:1px solid var(--border)}
+.bench-row:last-child{border-bottom:none}
+.bench-dim{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#bbb;margin-bottom:.2rem}
+.bench-val{font-size:12.5px;color:var(--ink);line-height:1.5}
+.bench-bar{height:3px;background:var(--border);margin-top:.5rem;overflow:hidden}
+.bench-fill{height:100%;background:var(--accent)}
+.bench-ks{font-size:11px;font-style:italic;color:var(--accent)}
+
+/* === JOURNEY FLOW === */
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:1.5rem 0}
+.journey-card{border:1px solid var(--border);overflow:hidden}
+.journey-head{padding:1rem 1.3rem}
+.journey-num{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.3rem}
+.journey-stage{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--white)}
+.journey-body{padding:.9rem 1.3rem;display:flex;flex-direction:column;gap:1rem}
+.journey-row{padding-left:.8rem;border-left:2px solid var(--border)}
+.journey-row.q{border-left-color:var(--accent)}
+.journey-row.p{border-left-color:#bf7d6e}
+.journey-row.i{border-left-color:#4a8880}
+.journey-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#bbb;margin-bottom:.2rem}
+.journey-txt{font-size:12px;color:#444;line-height:1.65}
+
+/* === GAP CARDS === */
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0}
+.gap-card{padding:1.3rem 1.4rem 1.3rem 1.6rem;border:1px solid var(--border);background:var(--white);border-left:3px solid var(--accent)}
+.gap-cat{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
+.gap-title{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:.45rem}
+.gap-desc{font-size:12px;color:var(--muted);line-height:1.75}
+
 footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(--white);display:flex;justify-content:space-between;align-items:center}
 .fcopy{font-size:12px;color:var(--muted)}
 .ftop{background:none;border:none;font-size:12px;color:var(--muted);cursor:pointer;font-family:var(--sans)}
@@ -270,34 +309,34 @@ a.hcta{text-decoration:none}
       <h2>Competitor Benchmark & Commercial Model Analysis</h2>
       <p>The leading-company study examines how the two most instructive competitors — an EC-native domestic challenger and a global incumbent — have structured their channel economics, promotional posture, and after-sales models. The goal is not just to describe what they do, but to identify the commercial logic behind it and the implications for our client.</p>
 
-      <div class="cs-grid" style="grid-template-columns:1fr 1fr 1fr">
-        <div class="cs-grid-cell head"><div class="cgc-title">Dimension</div><div class="cgc-val" style="color:#fff">—</div></div>
-        <div class="cs-grid-cell head"><div class="cgc-title">EC-Native Challenger</div><div class="cgc-val" style="color:#ddd">e.g. Usmile</div></div>
-        <div class="cs-grid-cell head"><div class="cgc-title">Global Incumbent</div><div class="cgc-val" style="color:#ddd">e.g. Philips Sonicare</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Channel Split</div><div class="cgc-val">~90% online (Tmall + TikTok)</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~90% online (Tmall + TikTok)</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~60% online / ~40% offline KA</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Traffic Mix</div><div class="cgc-val">KOL-heavy / live-commerce</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~70% social/KOL, ~30% paid search</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">~80% standard feed, ~20% SNS</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Promotional Posture</div><div class="cgc-val">Aggressive / frequent discounting</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">High — price-led conversion</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Selective — brand-equity led</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">After-Sales Model</div><div class="cgc-val">Returns-led / low-touch</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Online returns, minimal service</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Authorised service centres + online</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Margin Logic</div><div class="cgc-val">Volume-driven / thin margin</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">High volume, lower unit margin</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Lower volume, higher unit margin</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Key Strength</div><div class="cgc-val">Price agility + social reach</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">EC speed + content engine</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title"></div><div class="cgc-val">Brand trust + service quality</div></div>
+      <div class="bench-grid">
+        <div class="bench-card focal">
+          <div class="bench-head"><div class="bench-label">Focal Brand</div><div class="bench-brand">Client Brand</div></div>
+          <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~90% online (Tmall + TikTok)</div><div class="bench-bar"><div class="bench-fill" style="width:90%"></div></div></div>
+          <div class="bench-row"><div class="bench-dim">Traffic Mix</div><div class="bench-val">KOL-heavy / live-commerce</div></div>
+          <div class="bench-row"><div class="bench-dim">Promotional Posture</div><div class="bench-val">Aggressive / frequent discounting</div></div>
+          <div class="bench-row"><div class="bench-dim">After-Sales Model</div><div class="bench-val">Returns-led / low-touch</div></div>
+          <div class="bench-row"><div class="bench-dim">Margin Logic</div><div class="bench-val">Volume-driven / thin margin</div></div>
+          <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">Price agility + social reach</div></div>
+        </div>
+        <div class="bench-card">
+          <div class="bench-head"><div class="bench-label">EC-Native Challenger</div><div class="bench-brand">e.g. Usmile</div></div>
+          <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~90% online (Tmall + TikTok)</div><div class="bench-bar"><div class="bench-fill" style="width:90%"></div></div></div>
+          <div class="bench-row"><div class="bench-dim">Traffic Mix</div><div class="bench-val">~70% social/KOL, ~30% paid search</div></div>
+          <div class="bench-row"><div class="bench-dim">Promotional Posture</div><div class="bench-val">High — price-led conversion</div></div>
+          <div class="bench-row"><div class="bench-dim">After-Sales Model</div><div class="bench-val">Online returns, minimal service</div></div>
+          <div class="bench-row"><div class="bench-dim">Margin Logic</div><div class="bench-val">High volume, lower unit margin</div></div>
+          <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">EC speed + content engine</div></div>
+        </div>
+        <div class="bench-card">
+          <div class="bench-head"><div class="bench-label">Global Incumbent</div><div class="bench-brand">e.g. Philips Sonicare</div></div>
+          <div class="bench-row"><div class="bench-dim">Channel Split</div><div class="bench-val">~60% online / ~40% offline KA</div><div class="bench-bar"><div class="bench-fill" style="width:60%"></div></div></div>
+          <div class="bench-row"><div class="bench-dim">Traffic Mix</div><div class="bench-val">~80% standard feed, ~20% SNS</div></div>
+          <div class="bench-row"><div class="bench-dim">Promotional Posture</div><div class="bench-val">Selective — brand-equity led</div></div>
+          <div class="bench-row"><div class="bench-dim">After-Sales Model</div><div class="bench-val">Authorised service centres + online</div></div>
+          <div class="bench-row"><div class="bench-dim">Margin Logic</div><div class="bench-val">Lower volume, higher unit margin</div></div>
+          <div class="bench-row"><div class="bench-dim">Key Strength</div><div class="bench-val bench-ks">Brand trust + service quality</div></div>
+        </div>
       </div>
 
       <div class="insight-box"><strong>Commercial logic:</strong> The EC-native model wins on agility and content velocity but sacrifices margin and service depth. The global incumbent model protects margin and premium positioning but is structurally slow to respond to EC dynamics. A mid-market brand caught between these two is most vulnerable.</div>
@@ -309,22 +348,31 @@ a.hcta{text-decoration:none}
       <h2>Purchase Journey Pain Points</h2>
       <p>Understanding where consumers drop off — or lose confidence — across the purchase journey is essential for diagnosing EC underperformance. Three stages are most critical in this category:</p>
 
-      <div class="cs-grid" style="grid-template-columns:1fr 1fr 1fr">
-        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Awareness</div></div>
-        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Trial & Conversion</div></div>
-        <div class="cs-grid-cell head"><div class="cgc-title">Stage</div><div class="cgc-val" style="color:#fff">Adherence & Loyalty</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">Why should I choose this brand over Usmile?</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">Is the price-to-quality trade-off worth it?</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Key Question</div><div class="cgc-val">What happens when it breaks or needs service?</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">Brand messaging not differentiated from value competitors; KOL coverage thin vs. EC-native rivals</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">Review volume and rating scores lag EC-native brands; promotional mechanics unclear vs. competitors</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Pain Point</div><div class="cgc-val">After-sales process unclear online; repair/return policies not prominently communicated pre-purchase</div></div>
-
-        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Invest in differentiated efficacy-led content and KOL seeding at mid-tier</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Prioritise review generation; clarify value proposition vs. price-band peers</div></div>
-        <div class="cs-grid-cell"><div class="cgc-title">Implication</div><div class="cgc-val">Make AS model a front-of-page selling point, not a back-end footnote</div></div>
+      <div class="journey-grid">
+        <div class="journey-card">
+          <div class="journey-head" style="background:#8B6F4E"><div class="journey-num">Stage 01</div><div class="journey-stage">Awareness</div></div>
+          <div class="journey-body">
+            <div class="journey-row q"><div class="journey-lbl">Key Question</div><div class="journey-txt">Why should I choose this brand over Usmile?</div></div>
+            <div class="journey-row p"><div class="journey-lbl">Pain Point</div><div class="journey-txt">Brand messaging not differentiated from value competitors; KOL coverage thin vs. EC-native rivals</div></div>
+            <div class="journey-row i"><div class="journey-lbl">Implication</div><div class="journey-txt">Invest in differentiated efficacy-led content and KOL seeding at mid-tier</div></div>
+          </div>
+        </div>
+        <div class="journey-card">
+          <div class="journey-head" style="background:#bf7d6e"><div class="journey-num">Stage 02</div><div class="journey-stage">Trial &amp; Conversion</div></div>
+          <div class="journey-body">
+            <div class="journey-row q"><div class="journey-lbl">Key Question</div><div class="journey-txt">Is the price-to-quality trade-off worth it?</div></div>
+            <div class="journey-row p"><div class="journey-lbl">Pain Point</div><div class="journey-txt">Review volume and rating scores lag EC-native brands; promotional mechanics unclear vs. competitors</div></div>
+            <div class="journey-row i"><div class="journey-lbl">Implication</div><div class="journey-txt">Prioritise review generation; clarify value proposition vs. price-band peers</div></div>
+          </div>
+        </div>
+        <div class="journey-card">
+          <div class="journey-head" style="background:#4a8880"><div class="journey-num">Stage 03</div><div class="journey-stage">Adherence &amp; Loyalty</div></div>
+          <div class="journey-body">
+            <div class="journey-row q"><div class="journey-lbl">Key Question</div><div class="journey-txt">What happens when it breaks or needs service?</div></div>
+            <div class="journey-row p"><div class="journey-lbl">Pain Point</div><div class="journey-txt">After-sales process unclear online; repair/return policies not prominently communicated pre-purchase</div></div>
+            <div class="journey-row i"><div class="journey-lbl">Implication</div><div class="journey-txt">Make AS model a front-of-page selling point, not a back-end footnote</div></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -334,26 +382,26 @@ a.hcta{text-decoration:none}
       <h2>Organizational Structure, EC Operating Model & After-Sales Gaps</h2>
       <p>Beyond the external competitive picture, the steering pack examined where internal structure was limiting the brand's ability to compete effectively online. Three gap areas were identified:</p>
 
-      <div class="cs-findings">
-        <div class="cs-finding">
-          <div class="cs-finding-num">Organizational Structure</div>
-          <div class="cs-finding-title">No dedicated EC team structure</div>
-          <div class="cs-finding-desc">EC and offline planning sit within the same team, creating conflicting KPIs and slow response to platform dynamics. A dedicated EC pod — with its own P&L visibility — is needed to compete with EC-native brands operating at pace.</div>
+      <div class="gap-grid">
+        <div class="gap-card">
+          <div class="gap-cat">Organizational Structure</div>
+          <div class="gap-title">No dedicated EC team structure</div>
+          <div class="gap-desc">EC and offline planning sit within the same team, creating conflicting KPIs and slow response to platform dynamics. A dedicated EC pod — with its own P&L visibility — is needed to compete with EC-native brands operating at pace.</div>
         </div>
-        <div class="cs-finding">
-          <div class="cs-finding-num">EC Ops</div>
-          <div class="cs-finding-title">Traffic allocation skewed to standard feed</div>
-          <div class="cs-finding-desc">~80% of Tmall ad spend goes to standard search feed, with minimal investment in SNS/social traffic (TikTok, Redbook). EC-native competitors run the inverse — content-led traffic at lower CPM, with paid search as a conversion layer, not the primary acquisition driver.</div>
+        <div class="gap-card">
+          <div class="gap-cat">EC Ops</div>
+          <div class="gap-title">Traffic allocation skewed to standard feed</div>
+          <div class="gap-desc">~80% of Tmall ad spend goes to standard search feed, with minimal investment in SNS/social traffic. EC-native competitors run the inverse — content-led traffic at lower CPM, with paid search as a conversion layer.</div>
         </div>
-        <div class="cs-finding">
-          <div class="cs-finding-num">After-Sales</div>
-          <div class="cs-finding-title">AS capacity not scaled for EC volume</div>
-          <div class="cs-finding-desc">After-sales infrastructure was designed for offline retail volumes. As EC share grows, return rates and service enquiries are increasing faster than capacity. Without dedicated EC after-sales headcount and clear SLAs, this becomes a review and retention liability.</div>
+        <div class="gap-card">
+          <div class="gap-cat">After-Sales</div>
+          <div class="gap-title">AS capacity not scaled for EC volume</div>
+          <div class="gap-desc">After-sales infrastructure was designed for offline retail volumes. As EC share grows, return rates and service enquiries are increasing faster than capacity — becoming a review and retention liability.</div>
         </div>
-        <div class="cs-finding">
-          <div class="cs-finding-num">KPIs</div>
-          <div class="cs-finding-title">Cross-functional KPI visibility is limited</div>
-          <div class="cs-finding-desc">Sales, marketing, and operations teams track different metrics with no shared dashboard. This makes it difficult for leadership to identify where the EC funnel is leaking — awareness, conversion, or post-purchase — and to allocate resources accordingly.</div>
+        <div class="gap-card">
+          <div class="gap-cat">KPIs</div>
+          <div class="gap-title">Cross-functional KPI visibility is limited</div>
+          <div class="gap-desc">Sales, marketing, and operations teams track different metrics with no shared dashboard, making it difficult to identify where the EC funnel is leaking — awareness, conversion, or post-purchase.</div>
         </div>
       </div>
     </div>
