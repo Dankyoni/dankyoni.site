@@ -201,8 +201,8 @@ a.hcta{text-decoration:none}
 <div class="page-head"><h2>Articles & Writing</h2><p>Professional insights on market entry and growth, alongside personal life writing.</p></div>
   <div style="padding:.75rem 2.8rem;border-bottom:1px solid var(--border);display:flex;gap:.5rem;align-items:center">
     <span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:.3rem">Filter:</span>
-    <button class="fb on" id="fb-pro" onclick="fa('pro',this)" style="font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:.32rem .9rem;border:1px solid var(--ink);background:var(--ink);color:var(--white);cursor:pointer">Professional</a>
-    <button class="fb" id="fb-life" onclick="fa('life',this)" style="font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:.32rem .9rem;border:1px solid var(--border);background:none;color:var(--muted);cursor:pointer">Life Writing</a>
+    <button class="fb" id="fb-pro" onclick="fa('pro',this)" style="font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:.32rem .9rem;border:1px solid var(--ink);background:var(--ink);color:var(--white);cursor:pointer">Professional</a>
+    <button class="fb on" id="fb-life" onclick="fa('life',this)" style="font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:.32rem .9rem;border:1px solid var(--border);background:none;color:var(--muted);cursor:pointer">Life Writing</a>
   </div>
   <div class="agrid" id="agrid">
 
@@ -318,8 +318,8 @@ function fa(cat,btn){
   btn.style.background='var(--ink)';btn.style.color='var(--white)';btn.style.borderColor='var(--ink)';
 }
 window.addEventListener('DOMContentLoaded',function(){
-  var proBtn=document.getElementById('fb-pro');
-  if(proBtn)fa('pro',proBtn);
+  var lifeBtn=document.getElementById('fb-life');
+  if(lifeBtn)fa('life',lifeBtn);
 });
 </script>
 </body>
