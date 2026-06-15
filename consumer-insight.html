@@ -31,8 +31,10 @@ header{
 .art-wrap{max-width:680px;margin:0 auto;padding:3.5rem 2.8rem 6rem}
 .art-back{display:inline-flex;align-items:center;gap:.45rem;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;margin-bottom:2.8rem;transition:color .18s}
 .art-back:hover{color:var(--ink)}
-.art-label{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem;display:flex;align-items:center;gap:.6rem}
-.art-label::before{content:'';width:20px;height:1px;background:var(--accent)}
+.art-tags{display:flex;gap:.5rem;margin-bottom:1.2rem;flex-wrap:wrap}
+.art-tag{display:inline-block;font-size:10px;letter-spacing:.07em;text-transform:uppercase;padding:.28rem .8rem;border-radius:2px;font-weight:500}
+.art-tag.market{background:var(--tag);color:var(--muted)}
+.art-tag.insight{background:#f0ece6;color:var(--accent);border:1px solid rgba(139,111,78,.18)}
 h1{font-family:var(--serif);font-size:2.3rem;font-weight:400;line-height:1.15;margin-bottom:1.3rem;color:var(--ink)}
 .art-meta{font-size:12px;color:#aaa;padding-bottom:2rem;border-bottom:1px solid var(--border);margin-bottom:2.4rem}
 .art-body p{margin-bottom:1.2rem;color:#333;font-size:15px;line-height:1.95}
@@ -69,7 +71,10 @@ footer{background:var(--white);border-top:1px solid var(--border);padding:1.4rem
 <div class="art-wrap">
   <a href="articles.html" class="art-back">← Back to Articles</a>
 
-  <div class="art-label">China Market · Consumer Insight</div>
+  <div class="art-tags">
+    <span class="art-tag market">China Market</span>
+    <span class="art-tag insight">Consumer Insight</span>
+  </div>
   <h1>As Values Rebuild: Can a Brand Become Someone's "Nearby"?</h1>
   <div class="art-meta">June 2026 &nbsp;·&nbsp; Written in Bochum, Germany</div>
 
@@ -77,7 +82,7 @@ footer{background:var(--white);border-top:1px solid var(--border);padding:1.4rem
 
     <p class="section-head"><strong>Lying flat is not laziness — it's silent resistance.</strong></p>
 
-    <p>For thirty years, the logic held: score well on the gaokao, get into a good university, find a good job, and life gets better. Young people like me who left villages to study and work in big cities — our parents might have worked in factories or farmed the land, but as long as the child got that diploma, the next generation's trajectory could be different. This was more than a cultural expectation; it was a social contract, and two generations organized their entire lives around it.</p>
+    <p>For the past thirty years, the driving force behind China's economic rise was the diligence and hard work of its people. The path upward has always been clear: pass the gaokao — China's national university entrance exam, the single test that determines which university a student enters — get into a good university, find a good job, and life will keep getting better. Young people like me who left villages to study and work in big cities — our parents might have worked in factories or farmed the land, but as long as the child earned that diploma, the next generation's trajectory could be different. This was more than a cultural expectation; it was a social contract, and two generations organized their entire lives around it.</p>
 
     <p>Young people are waking up. They no longer let involution — studying longer, working more overtime, giving more — define their lives, because the promised "outcome" keeps moving further away. Even now, putting in ten times the effort of our parents' generation, we get back a fraction of what they received. The mainstream value system that defined "success" as the only possible answer has quietly started to lose its grip. More and more people simply want to live well and be happy — and have decided that is enough.</p>
 
