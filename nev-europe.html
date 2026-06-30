@@ -38,7 +38,7 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 
 /* BODY */
 .cs-body{max-width:900px;margin:0 auto;padding:3rem 2.8rem}
-.cs-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--border)}
+.cs-section{margin-bottom:4.5rem;padding-bottom:4.5rem;border-bottom:1px solid var(--border)}
 .cs-section:last-child{border-bottom:none}
 .sec-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem}
 .sec-label::after{content:'';width:24px;height:.5px;background:var(--border);display:inline-block}
@@ -236,26 +236,29 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
       <div class="gs-note">Europe (primarily Belgium / Antwerp as re-export corridor) is the top destination. In 2023 China surpassed Japan as the world's #1 auto exporter for the first time.</div>
     </div>
 
-    <div class="layer-grid">
-      <div class="layer-card">
-        <div class="layer-head"><div class="layer-num">Path 01</div><div class="layer-title">Volume — Direct Market</div></div>
-        <div class="layer-body">
-          <div class="layer-row hi"><div class="layer-lbl">Lead</div><div class="layer-txt">BYD — high-volume EU rollout; Hungary factory under consideration</div></div>
-          <div class="layer-row"><div class="layer-lbl">Signal</div><div class="layer-txt">Fleet / taxi channel in Norway & Netherlands</div></div>
+    <div class="finding-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Path 01 · Volume — Direct Market</div>
+          <div class="finding-title">BYD</div>
+          <div class="finding-signal">High-volume EU rollout; Hungary factory under consideration. Fleet / taxi channel in Norway &amp; Netherlands.</div>
         </div>
       </div>
-      <div class="layer-card">
-        <div class="layer-head"><div class="layer-num">Path 02</div><div class="layer-title">Premium — Brand Build</div></div>
-        <div class="layer-body">
-          <div class="layer-row hi"><div class="layer-lbl">Lead</div><div class="layer-txt">NIO — NIO House showrooms (Berlin, Amsterdam, Oslo); BaaS subscription model</div></div>
-          <div class="layer-row"><div class="layer-lbl">Signal</div><div class="layer-txt">High brand investment; targets premium German OEM buyers</div></div>
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Path 02 · Premium — Brand Build</div>
+          <div class="finding-title">NIO</div>
+          <div class="finding-signal">NIO House showrooms (Berlin, Amsterdam, Oslo); BaaS subscription model. Targets premium German OEM buyers.</div>
         </div>
       </div>
-      <div class="layer-card">
-        <div class="layer-head"><div class="layer-num">Path 03</div><div class="layer-title">Partnership — Asset-Light</div></div>
-        <div class="layer-body">
-          <div class="layer-row hi"><div class="layer-lbl">Lead</div><div class="layer-txt">Leapmotor × Stellantis — EU distribution via Stellantis dealer networks</div></div>
-          <div class="layer-row"><div class="layer-lbl">Signal</div><div class="layer-txt">Asset-light; leverages existing EU automotive infrastructure</div></div>
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Path 03 · Partnership — Asset-Light</div>
+          <div class="finding-title">Leapmotor × Stellantis</div>
+          <div class="finding-signal">EU distribution via Stellantis established dealer networks. Asset-light; leverages existing EU automotive infrastructure.</div>
         </div>
       </div>
     </div>
@@ -407,30 +410,38 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
     <div class="sec-label">05 — Synthesis · Expansion Framework</div>
     <h2>Four Archetypes Across the Ecosystem</h2>
 
-    <div class="priority-grid">
-      <div class="priority-card">
-        <div class="p-label">Archetype 01</div>
-        <div class="p-title">Local Manufacturing</div>
-        <div class="p-players">BYD · Leapmotor × Stellantis</div>
-        <div class="p-desc">Highest capital commitment. Bypasses EU tariffs, qualifies for local content incentives. Longest timeline to revenue.</div>
+    <div class="finding-grid">
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Archetype 01</div>
+          <div class="finding-title">Local Manufacturing</div>
+          <div class="finding-signal">BYD · Leapmotor × Stellantis — Highest capital commitment. Bypasses EU tariffs, qualifies for local content incentives.</div>
+        </div>
       </div>
-      <div class="priority-card dark">
-        <div class="p-label">Archetype 02 · Dominant</div>
-        <div class="p-title">Equipment Export</div>
-        <div class="p-players">EN+ · Autel · Sungrow · Gresgying · East · Iocharger · EVbee</div>
-        <div class="p-desc">Fastest-scaling model in 2024. CE-certified hardware + local service subsidiary. Asset-light but tariff-exposed.</div>
+      <div class="finding-card" style="border:2px solid var(--accent);margin:-1px">
+        <div class="finding-stripe" style="height:4px"></div>
+        <div class="finding-body">
+          <div class="finding-tag" style="color:var(--accent);font-weight:600">Archetype 02 · Dominant</div>
+          <div class="finding-title">Equipment Export</div>
+          <div class="finding-signal">EN+ · Autel · Sungrow · Gresgying · East · Iocharger · EVbee — Fastest-scaling 2024 model. CE cert + local service subsidiary.</div>
+        </div>
       </div>
-      <div class="priority-card">
-        <div class="p-label">Archetype 03</div>
-        <div class="p-title">Strategic Partnerships</div>
-        <div class="p-players">Star Charge · Autel · NIO</div>
-        <div class="p-desc">Deep integration with EU utilities, interoperability platforms, and auto groups. Highest strategic moat over time.</div>
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Archetype 03</div>
+          <div class="finding-title">Strategic Partnerships</div>
+          <div class="finding-signal">Star Charge · Autel · NIO — Deep integration with EU utilities, interoperability platforms, and auto groups.</div>
+        </div>
       </div>
-      <div class="priority-card">
-        <div class="p-label">Archetype 04 · Emerging</div>
-        <div class="p-title">SaaS / Platform Play</div>
-        <div class="p-players">YKC · DAKEYUN</div>
-        <div class="p-desc">Software-only international model — aggregation platform or SaaS to EU CPOs without owning hardware. Nascent as of 2024.</div>
+      <div class="finding-card">
+        <div class="finding-stripe"></div>
+        <div class="finding-body">
+          <div class="finding-tag">Archetype 04 · Emerging</div>
+          <div class="finding-title">SaaS / Platform Play</div>
+          <div class="finding-signal">YKC · DAKEYUN — Software-only international model, aggregation platform or SaaS to EU CPOs. Nascent as of 2024.</div>
+        </div>
       </div>
     </div>
 
