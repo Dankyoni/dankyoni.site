@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="380" fill="#1c2b3a"/>
+  <!-- Grid texture -->
+  <rect width="600" height="380" fill="url(#grid)"/>
+  <!-- Accent stripe -->
+  <rect x="0" y="0" width="600" height="3" fill="#8B6F4E"/>
+  <!-- Right glow panel -->
+  <rect x="370" y="0" width="230" height="380" fill="rgba(139,111,78,0.06)"/>
+  <!-- Diagonal rule -->
+  <line x1="370" y1="0" x2="370" y2="380" stroke="rgba(139,111,78,0.2)" stroke-width="1"/>
+
+  <!-- Category -->
+  <text x="36" y="50" font-size="10" fill="rgba(255,255,255,0.45)" font-family="Arial,sans-serif" letter-spacing="2">AUTOMOTIVE · NEV · EUROPE MARKET ENTRY · 2024</text>
+
+  <!-- Title -->
+  <text x="36" y="102" font-size="28" font-weight="400" fill="#ffffff" font-family="Georgia,serif">Chinese NEV OEM &amp;</text>
+  <text x="36" y="140" font-size="28" font-weight="400" fill="#ffffff" font-family="Georgia,serif">Charging Infrastructure</text>
+  <!-- Subtitle -->
+  <text x="36" y="175" font-size="13" fill="rgba(255,255,255,0.6)" font-family="Georgia,serif" font-style="italic">European Expansion Intelligence &amp; Partnership Mapping</text>
+
+  <!-- Rule -->
+  <rect x="36" y="198" width="200" height="1" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Stats -->
+  <text x="36"  y="238" font-size="28" font-weight="400" fill="#ffffff" font-family="Georgia,serif">3</text>
+  <text x="36"  y="256" font-size="9" fill="rgba(255,255,255,0.45)" font-family="Arial,sans-serif" letter-spacing="1.8">ECOSYSTEM LAYERS</text>
+
+  <text x="130" y="238" font-size="28" font-weight="400" fill="#ffffff" font-family="Georgia,serif">~518k</text>
+  <text x="130" y="256" font-size="9" fill="rgba(255,255,255,0.45)" font-family="Arial,sans-serif" letter-spacing="1.8">EU BEV UNITS 2023</text>
+
+  <text x="270" y="238" font-size="28" font-weight="400" fill="#ffffff" font-family="Georgia,serif">+135%</text>
+  <text x="270" y="256" font-size="9" fill="rgba(255,255,255,0.45)" font-family="Arial,sans-serif" letter-spacing="1.8">CHINA BEV EXPORT YOY</text>
+
+  <!-- Client label -->
+  <rect x="36" y="278" width="220" height="24" fill="rgba(139,111,78,0.25)" rx="2"/>
+  <text x="46" y="294" font-size="10" fill="rgba(255,255,255,0.7)" font-family="Arial,sans-serif" letter-spacing="1">Japanese Global Trading House · Confidential</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="340" width="600" height="40" fill="rgba(0,0,0,0.2)"/>
+  <text x="36" y="364" font-size="9.5" fill="rgba(255,255,255,0.4)" font-family="Arial,sans-serif" letter-spacing="1.8">MARKET INTELLIGENCE · STAKEHOLDER MAPPING · STRATEGIC PARTNERSHIPS</text>
+  <text x="540" y="364" font-size="9.5" fill="rgba(255,255,255,0.8)" font-family="Arial,sans-serif" letter-spacing="1.2">READ →</text>
+</svg>
