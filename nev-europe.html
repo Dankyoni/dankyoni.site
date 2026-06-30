@@ -115,15 +115,12 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 /* PRIORITY GRID (Archetypes) */
 .priority-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin:1.4rem 0}
 .priority-card{padding:1.2rem;background:var(--white)}
-.priority-card.dark{background:var(--navy)}
+.priority-card.dark{background:var(--white);border:2px solid var(--navy);margin:-1px}
 .p-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
-.priority-card.dark .p-label{color:rgba(255,255,255,.4)}
+.priority-card.dark .p-label{color:var(--navy);font-weight:600}
 .p-title{font-family:var(--serif);font-size:.92rem;font-weight:400;color:var(--ink);margin-bottom:.5rem;line-height:1.25}
-.priority-card.dark .p-title{color:var(--white)}
 .p-players{font-size:11px;font-weight:500;color:var(--ink);margin-bottom:.4rem;line-height:1.5}
-.priority-card.dark .p-players{color:rgba(255,255,255,.9)}
 .p-desc{font-size:11px;color:var(--muted);line-height:1.65}
-.priority-card.dark .p-desc{color:rgba(255,255,255,.5)}
 
 /* INSIGHT */
 .insight-box{background:var(--light);border-left:3px solid var(--ink);padding:.95rem 1.2rem;margin:1.1rem 0;font-size:13px;color:#333;line-height:1.75}
