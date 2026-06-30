@@ -35,22 +35,19 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 
 /* === ROLE PROFILES SECTION === */
 .roles-sec{background:var(--white)}
-.role-list{padding:2rem 2.8rem 4rem;display:flex;flex-direction:column;gap:1.2rem}
+.role-list{padding:2rem 2.8rem 4rem;display:flex;flex-direction:column;gap:2rem}
 .role-card{border:1px solid var(--border);overflow:hidden}
 .role-stripe{height:3px}
-.role-inner{padding:2.2rem 2.4rem 2.2rem;display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start}
-.role-tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#999;margin-bottom:.6rem}
-.role-title{font-family:var(--serif);font-size:1.35rem;font-weight:400;line-height:1.25;margin-bottom:.75rem}
-.role-desc{font-size:12.5px;color:#444;line-height:1.85;margin-bottom:1.4rem}
-.role-caps{display:flex;flex-direction:column;gap:.75rem}
-.rc{display:flex;gap:.75rem;align-items:flex-start}
-.rc-n{min-width:20px;height:20px;background:var(--tag);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;color:var(--ink);flex-shrink:0;margin-top:2px}
+.role-inner{padding:2rem 2.2rem}
+.role-tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#999;margin-bottom:.55rem}
+.role-title{font-family:var(--serif);font-size:1.3rem;font-weight:400;line-height:1.25;margin-bottom:.7rem}
+.role-desc{font-size:12.5px;color:#444;line-height:1.85;margin-bottom:1.2rem}
+.role-caps{display:flex;flex-direction:column;gap:.6rem}
+.rc{display:flex;gap:.5rem;align-items:baseline}
+.rc-n{display:none}
 .rc-t{font-size:12px;font-weight:500;color:var(--ink);margin-bottom:1px}
-.rc-s{font-size:11px;color:var(--muted)}
-.role-stats{display:flex;flex-direction:column;gap:1.3rem}
-.rs{padding-left:1rem;border-left:2px solid var(--accent)}
-.rs-num{font-family:var(--serif);font-size:1.9rem;font-weight:400;line-height:1;color:var(--ink);display:block;margin-bottom:.2rem}
-.rs-lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#aaa}
+.rc-t::before{content:'—';margin-right:.3rem;color:var(--muted);font-weight:400}
+.rc-s{font-size:11px;color:var(--muted);margin-left:.3rem}
 
 /* === DIVIDER BAND === */
 .div-band{background:#F3E9D8;border-top:3px solid var(--accent);border-bottom:1px solid #e0d4c0;padding:2.8rem 2.8rem;display:flex;justify-content:space-between;align-items:center;gap:2rem}
@@ -61,7 +58,7 @@ header{display:flex;justify-content:space-between;align-items:stretch;padding:0 
 /* === SELECTED WORK SECTION === */
 .work-sec{background:var(--light)}
 .sw-list{padding:1rem 2.8rem 4rem}
-.sw-item{display:grid;grid-template-columns:60px 1fr;gap:2rem;padding:2.2rem 0;border-bottom:1px solid var(--border);cursor:pointer;transition:background .18s;margin:0 -2.8rem;padding-left:2.8rem;padding-right:2.8rem}
+.sw-item{display:grid;grid-template-columns:60px 1fr;gap:2rem;padding:2.8rem 0;border-bottom:1px solid var(--border);cursor:pointer;transition:background .18s;margin:0 -2.8rem;padding-left:2.8rem;padding-right:2.8rem}
 .sw-item:first-child{border-top:1px solid var(--border)}
 .sw-item:hover{background:var(--white)}
 .sw-left{padding-top:.2rem}
@@ -222,29 +219,13 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
     <div class="role-card">
       <div class="role-stripe" style="background:linear-gradient(90deg,#222,#666)"></div>
       <div class="role-inner">
-        <div>
-          <div class="role-tag">Market Entry &amp; Expansion Consulting</div>
-          <h3 class="role-title">International Strategy &amp; Business Development</h3>
-          <p class="role-desc">Delivered client-facing consulting in market entry strategy, growth advisory, and cross-border expansion across APAC and Europe. Background spans structured problem-solving, executive-level proposal delivery, and multi-stakeholder coordination across Japan, China, India, and Southeast Asia.</p>
-          <div class="role-caps">
-            <div class="rc">
-              <div class="rc-n">1</div>
-              <div><div class="rc-t">Market Intelligence &amp; Scoping</div><div class="rc-s">market sizing, regulatory mapping, competitive benchmarking</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">2</div>
-              <div><div class="rc-t">Strategic Proposal Development</div><div class="rc-s">executive packs covering growth scenarios and go-to-market options</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">3</div>
-              <div><div class="rc-t">Cross-functional Delivery</div><div class="rc-s">coordinating teams across geographies for on-time project outcomes</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="role-stats">
-          <div class="rs"><span class="rs-num">5+</span><span class="rs-lbl">Years Consulting</span></div>
-          <div class="rs"><span class="rs-num">4+</span><span class="rs-lbl">Projects / Month</span></div>
-          <div class="rs"><span class="rs-num">APAC</span><span class="rs-lbl">Core Market</span></div>
+        <div class="role-tag">Market Entry &amp; Expansion Consulting</div>
+        <h3 class="role-title">International Strategy &amp; Business Development</h3>
+        <p class="role-desc">Delivered client-facing consulting in market entry strategy, growth advisory, and cross-border expansion across APAC and Europe. Background spans structured problem-solving, executive-level proposal delivery, and multi-stakeholder coordination across Japan, China, India, and Southeast Asia.</p>
+        <div class="role-caps">
+          <div class="rc"><div class="rc-t">Market Intelligence &amp; Scoping</div><div class="rc-s">market sizing, regulatory mapping, competitive benchmarking</div></div>
+          <div class="rc"><div class="rc-t">Strategic Proposal Development</div><div class="rc-s">executive packs covering growth scenarios and go-to-market options</div></div>
+          <div class="rc"><div class="rc-t">Cross-functional Delivery</div><div class="rc-s">coordinating teams across geographies for on-time project outcomes</div></div>
         </div>
       </div>
     </div>
@@ -253,28 +234,13 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
     <div class="role-card">
       <div class="role-stripe" style="background:#8B6F4E"></div>
       <div class="role-inner">
-        <div>
-          <div class="role-tag">Account &amp; Partnership Management</div>
-          <h3 class="role-title">Key Account Management</h3>
-          <p class="role-desc">Built trusted client relationships through strategic KAM and partnership management — driving portfolio growth and managing complex cross-border accounts. Grew an 8-brand portfolio to 132% of GMV and gross profit targets at Rakuten Group within 6 months.</p>
-          <div class="role-caps">
-            <div class="rc">
-              <div class="rc-n">1</div>
-              <div><div class="rc-t">Relationship Building &amp; Advisory</div><div class="rc-s">structured advisory and executive-level engagement</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">2</div>
-              <div><div class="rc-t">Portfolio Expansion</div><div class="rc-s">upsell opportunities through market intelligence and competitive analysis</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">3</div>
-              <div><div class="rc-t">Cross-border Coordination</div><div class="rc-s">aligning internal teams and client stakeholders across APAC</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="role-stats">
-          <div class="rs"><span class="rs-num">8</span><span class="rs-lbl">Key Accounts · 6 months</span></div>
-          <div class="rs"><span class="rs-num">132%</span><span class="rs-lbl">GMV vs. Target</span></div>
+        <div class="role-tag">Account &amp; Partnership Management</div>
+        <h3 class="role-title">Key Account Management</h3>
+        <p class="role-desc">Built trusted client relationships through strategic KAM and partnership management — driving portfolio growth and managing complex cross-border accounts. Grew an 8-brand portfolio to 132% of GMV and gross profit targets at Rakuten Group within 6 months.</p>
+        <div class="role-caps">
+          <div class="rc"><div class="rc-t">Relationship Building &amp; Advisory</div><div class="rc-s">structured advisory and executive-level engagement</div></div>
+          <div class="rc"><div class="rc-t">Portfolio Expansion</div><div class="rc-s">upsell opportunities through market intelligence and competitive analysis</div></div>
+          <div class="rc"><div class="rc-t">Cross-border Coordination</div><div class="rc-s">aligning internal teams and client stakeholders across APAC</div></div>
         </div>
       </div>
     </div>
@@ -283,28 +249,13 @@ footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(-
     <div class="role-card">
       <div class="role-stripe" style="background:#444"></div>
       <div class="role-inner">
-        <div>
-          <div class="role-tag">E-commerce Growth</div>
-          <h3 class="role-title">E-commerce Growth Management / Marketplace Management</h3>
-          <p class="role-desc">Drove e-commerce growth and marketplace management where channel strategy connected directly to measurable commercial uplift. Experience spanning Tmall, TikTok, JD, Redbook, and cross-border commerce.</p>
-          <div class="role-caps">
-            <div class="rc">
-              <div class="rc-n">1</div>
-              <div><div class="rc-t">Channel Strategy &amp; Architecture</div><div class="rc-s">defining roles across Tmall, TikTok, Redbook, WeChat</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">2</div>
-              <div><div class="rc-t">Category &amp; Product Growth</div><div class="rc-s">portfolio prioritisation and hero-product development</div></div>
-            </div>
-            <div class="rc">
-              <div class="rc-n">3</div>
-              <div><div class="rc-t">Launch Execution &amp; Optimisation</div><div class="rc-s">ROI modelling, cross-functional alignment, performance tracking</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="role-stats">
-          <div class="rs"><span class="rs-num">3</span><span class="rs-lbl">Brands Launched</span></div>
-          <div class="rs"><span class="rs-num">+20%</span><span class="rs-lbl">Sales on Launch</span></div>
+        <div class="role-tag">E-commerce Growth</div>
+        <h3 class="role-title">E-commerce Growth Management / Marketplace Management</h3>
+        <p class="role-desc">Drove e-commerce growth and marketplace management where channel strategy connected directly to measurable commercial uplift. Experience spanning Tmall, TikTok, JD, Redbook, and cross-border commerce.</p>
+        <div class="role-caps">
+          <div class="rc"><div class="rc-t">Channel Strategy &amp; Architecture</div><div class="rc-s">defining roles across Tmall, TikTok, Redbook, WeChat</div></div>
+          <div class="rc"><div class="rc-t">Category &amp; Product Growth</div><div class="rc-s">portfolio prioritisation and hero-product development</div></div>
+          <div class="rc"><div class="rc-t">Launch Execution &amp; Optimisation</div><div class="rc-s">ROI modelling, cross-functional alignment, performance tracking</div></div>
         </div>
       </div>
     </div>
