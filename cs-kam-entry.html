@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan Xu · KAM Case Study — Exclusive Distributor Win & China Market Entry</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#111;--muted:#777;--light:#f8f7f5;--white:#fff;
+  --border:#e5e1db;--tag:#eeebe6;--accent:#8B6F4E;--navy:#1c2b3a;
+  --serif:'Playfair Display',serif;--sans:'DM Sans',sans-serif;
+}
+body{font-family:var(--sans);background:var(--light);color:var(--ink);font-size:14px;line-height:1.65;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:stretch;padding:0 2.8rem;background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30;height:58px}
+.logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;display:flex;align-items:center;text-decoration:none;color:var(--ink);flex-shrink:0}
+.logo span{color:var(--muted);font-style:italic;font-size:.95rem}
+.header-nav{display:flex;align-items:stretch;overflow-x:auto}
+.tab{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:0 1.1rem;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none;display:flex;align-items:center}
+.tab:hover{color:var(--ink)}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
+
+/* HERO */
+.cs-hero{padding:3.5rem 2.8rem 3rem;border-bottom:1px solid var(--border);background:var(--white);border-top:3px solid var(--navy)}
+.cs-back{display:inline-flex;align-items:center;gap:.5rem;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;background:none;border:none;font-family:var(--sans);text-decoration:none}
+.cs-back:hover{color:var(--ink)}
+.cs-eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:.75rem;opacity:.7}
+.cs-hero h1{font-family:var(--serif);font-size:2.6rem;font-weight:400;line-height:1.15;max-width:720px;margin-bottom:1rem;color:var(--ink)}
+.cs-hero h1 em{font-style:italic;color:var(--accent)}
+.cs-meta{display:flex;gap:2.5rem;flex-wrap:wrap;margin-top:1.5rem}
+.cs-meta-item{font-size:12px;color:var(--muted)}
+.cs-meta-item strong{color:#aaa;display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+.cs-disclaimer{display:inline-block;margin-top:1.5rem;font-size:11px;padding:.45rem 1rem;border:1px solid var(--border);color:var(--muted);letter-spacing:.06em}
+
+/* BODY */
+.cs-body{max-width:900px;margin:0 auto;padding:3rem 2.8rem}
+.cs-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--border)}
+.cs-section:last-child{border-bottom:none}
+.cs-section-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem}
+.cs-section-label::after{content:'';width:24px;height:.5px;background:var(--border);display:inline-block}
+.cs-section h2{font-family:var(--serif);font-size:1.55rem;font-weight:400;margin-bottom:1.2rem;line-height:1.25}
+
+/* CONTEXT STRIP */
+.ctx-strip{border:1px solid var(--border);margin:1.2rem 0 1.6rem}
+.ctx-row{display:grid;grid-template-columns:96px 1fr;border-bottom:1px solid var(--border)}
+.ctx-row:last-child{border-bottom:none}
+.ctx-key{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:.9rem 1.1rem;background:var(--tag);border-right:1px solid var(--border);display:flex;align-items:center;line-height:1.4}
+.ctx-val{font-size:13px;color:#333;padding:.9rem 1.3rem;line-height:1.75}
+
+/* BID COMPETITION */
+.bid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin:1.5rem 0}
+.bid-col{background:var(--white);padding:1.3rem 1.2rem;text-align:center}
+.bid-col.loser{background:#fafaf9}
+.bid-col.winner{background:var(--navy)}
+.bid-icon{font-size:1.3rem;margin-bottom:.4rem;opacity:.35}
+.bid-col.winner .bid-icon{opacity:1;color:var(--accent)}
+.bid-label{font-size:11px;letter-spacing:.06em;color:var(--muted);margin-bottom:.4rem}
+.bid-col.winner .bid-label{color:rgba(255,255,255,.6)}
+.bid-name{font-family:var(--serif);font-size:.95rem;color:#bbb}
+.bid-col.winner .bid-name{color:var(--white);font-size:1.05rem}
+.bid-status{font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-top:.45rem;color:#ccc}
+.bid-col.winner .bid-status{color:var(--accent);font-weight:500}
+
+/* 4-STAGE PROCESS */
+.process-flow{display:flex;align-items:stretch;margin:1.5rem 0;border:1px solid var(--border);overflow:hidden;background:var(--white)}
+.proc-node{flex:1;padding:1.1rem 1rem;border-right:1px solid var(--border)}
+.proc-node:last-child{border-right:none}
+.proc-num{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.35rem}
+.proc-title{font-family:var(--serif);font-size:.92rem;font-weight:400;color:var(--navy);margin-bottom:.35rem;line-height:1.25}
+.proc-sub{font-size:11px;color:var(--muted);line-height:1.55}
+
+/* CHANNEL ARCHITECTURE */
+.ch-arch{margin:1.5rem 0;border:1px solid var(--border);overflow:hidden}
+.ch-arch-title{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:.8rem 1.3rem;border-bottom:1px solid var(--border);background:var(--tag)}
+.ch-tier{display:grid;grid-template-columns:120px 1fr;border-bottom:1px solid var(--border)}
+.ch-tier:last-child{border-bottom:none}
+.ch-tier-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:.9rem 1.2rem;background:var(--white);border-right:1px solid var(--border);display:flex;align-items:center}
+.ch-tier-content{padding:.85rem 1.3rem;background:var(--white)}
+.ch-tier-name{font-size:12.5px;font-weight:500;color:var(--ink);margin-bottom:.2rem}
+.ch-tier-desc{font-size:11.5px;color:var(--muted);line-height:1.6}
+.ch-tier.highlight .ch-tier-label{background:var(--navy);color:rgba(255,255,255,.6);border-right-color:var(--navy)}
+.ch-tier.highlight .ch-tier-content{background:#f5f0ea}
+.ch-tier.highlight .ch-tier-name{color:var(--navy)}
+
+/* COMMERCIAL MODEL */
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin:1.5rem 0}
+.comm-cell{background:var(--white);padding:1.1rem 1.2rem}
+.comm-cell.head{background:var(--navy)}
+.comm-dim{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem}
+.comm-cell.head .comm-dim{color:rgba(255,255,255,.45)}
+.comm-val{font-size:12.5px;color:var(--ink);line-height:1.5}
+.comm-cell.head .comm-val{color:var(--white);font-weight:500}
+
+/* KAM ACTIVITIES */
+.kam-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin:1.5rem 0}
+.kam-card{border:1px solid var(--border);background:var(--white);padding:1.1rem 1.2rem}
+.kam-icon{font-size:1.1rem;margin-bottom:.5rem;color:var(--accent)}
+.kam-title{font-size:12.5px;font-weight:500;color:var(--ink);margin-bottom:.3rem}
+.kam-desc{font-size:11.5px;color:var(--muted);line-height:1.65}
+
+/* INSIGHT */
+.insight-box{background:var(--light);border-left:3px solid var(--navy);padding:1rem 1.3rem;margin:1.2rem 0;font-size:13px;color:#333;line-height:1.75}
+.insight-box.accent{border-left-color:var(--accent)}
+
+/* SKILLS */
+.skills-used{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.su{font-size:11px;padding:.3rem .8rem;background:var(--tag)}
+.btn1{font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:.65rem 1.5rem;background:var(--ink);color:var(--white);border:none;cursor:pointer;transition:background .2s;text-decoration:none;display:inline-block;margin-top:1.5rem}
+.btn1:hover{background:#333}
+
+footer{padding:1.4rem 2.8rem;border-top:1px solid var(--border);background:var(--white);display:flex;justify-content:space-between;align-items:center}
+.fcopy{font-size:12px;color:var(--muted)}
+.ftop{background:none;border:none;font-size:12px;color:var(--muted);cursor:pointer;font-family:var(--sans)}
+
+@media(max-width:760px){
+  .cs-body{padding:2rem 1.4rem}
+  .cs-hero{padding:2.5rem 1.4rem 2rem}
+  .bid-grid,.process-flow,.comm-grid,.kam-grid{grid-template-columns:1fr}
+  .process-flow{flex-direction:column}
+  .proc-node{border-right:none;border-bottom:1px solid var(--border)}
+  .proc-node:last-child{border-bottom:none}
+  header{padding:0 1.4rem}
+  .cs-hero h1{font-size:1.9rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Dan Xu <span>· Personal Site</span></a>
+  <nav class="header-nav">
+    <a href="index.html" class="tab">About</a>
+    <a href="experience.html" class="tab">Experience</a>
+    <a href="projects.html" class="tab">Projects</a>
+    <a href="casestudy.html" class="tab on">Case Study</a>
+    <a href="articles.html" class="tab">Articles</a>
+    <a href="contact.html" class="tab">Contact</a>
+  </nav>
+</header>
+
+<div class="cs-hero">
+  <a class="cs-back" href="casestudy.html"><i class="ti ti-arrow-left"></i> Back to Case Studies</a>
+  <div class="cs-eyebrow">Case Study · KAM / Business Development · China Market Entry</div>
+  <h1>Exclusive Distributor Win:<br><em>Japan Brand China Market Entry</em></h1>
+  <div class="cs-meta">
+    <div class="cs-meta-item"><strong>Context</strong>Japanese Multinational E-commerce Group (Shanghai)</div>
+    <div class="cs-meta-item"><strong>Client</strong>Japanese Consumer Brand — Color Care Category</div>
+    <div class="cs-meta-item"><strong>Market</strong>Japan → China (Cross-border & Domestic)</div>
+    <div class="cs-meta-item"><strong>Timeline</strong>Won within 6 months · 2021–2022</div>
+    <div class="cs-meta-item"><strong>Role</strong>Market Entry & BD Consultant · KAM</div>
+  </div>
+  <div class="cs-disclaimer">🔒 Client identity anonymized. Commercial figures withheld per confidentiality.</div>
+</div>
+
+<div class="cs-body">
+
+  <!-- ── SITUATION ──────────────────────────────── -->
+  <div class="cs-section">
+    <div class="cs-section-label">Situation</div>
+    <h2>A Competitive Bid for Exclusive Distribution Rights in China</h2>
+
+    <div class="ctx-strip">
+      <div class="ctx-row">
+        <div class="ctx-key">Background</div>
+        <div class="ctx-val">A Japanese specialty consumer brand in the color care category sought an exclusive general-agent to introduce its product line to the China market. Three agencies competed for the mandate — including two established players with existing China distribution networks.</div>
+      </div>
+      <div class="ctx-row">
+        <div class="ctx-key">The Work</div>
+        <div class="ctx-val">Built and presented the complete market entry proposal: category and regulatory investigation, brand positioning for China, commercial architecture (pricing, channel, distribution model), P&L simulation, and negotiation with senior Japanese client executives through to internal approval.</div>
+      </div>
+      <div class="ctx-row">
+        <div class="ctx-key">Outcome</div>
+        <div class="ctx-val">Won the exclusive general-agent mandate within six months of joining the organization. Subsequently built the China commercial architecture from zero — controlled distribution, price floors, channel strategy — and managed the account as KAM.</div>
+      </div>
+    </div>
+
+    <!-- 3-way bid visual -->
+    <div class="bid-grid">
+      <div class="bid-col loser">
+        <div class="bid-icon">○</div>
+        <div class="bid-label">Competing Agency</div>
+        <div class="bid-name">Agency A</div>
+        <div class="bid-status">Not Selected</div>
+      </div>
+      <div class="bid-col loser">
+        <div class="bid-icon">○</div>
+        <div class="bid-label">Competing Agency</div>
+        <div class="bid-name">Agency B</div>
+        <div class="bid-status">Not Selected</div>
+      </div>
+      <div class="bid-col winner">
+        <div class="bid-icon" style="opacity:1;color:#8B6F4E;font-size:1.5rem">✓</div>
+        <div class="bid-label">Awarded To</div>
+        <div class="bid-name">This Engagement</div>
+        <div class="bid-status">Exclusive Mandate</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 4-STAGE APPROACH ───────────────────────── -->
+  <div class="cs-section">
+    <div class="cs-section-label">Approach — 4-Stage Bid Process</div>
+    <h2>From Market Intelligence to Executive Approval</h2>
+
+    <div class="process-flow">
+      <div class="proc-node">
+        <div class="proc-num">Stage 01</div>
+        <div class="proc-title">Market & Regulatory Investigation</div>
+        <div class="proc-sub">Category sizing, competitive landscape, regulatory scope (NMPA, cross-border import), distribution channel structure</div>
+      </div>
+      <div class="proc-node">
+        <div class="proc-num">Stage 02</div>
+        <div class="proc-title">Brand Positioning for China</div>
+        <div class="proc-sub">Target consumer definition, pricing tier placement, competitive differentiation vs. domestic and imported alternatives</div>
+      </div>
+      <div class="proc-node">
+        <div class="proc-num">Stage 03</div>
+        <div class="proc-title">Commercial Case & P&L Model</div>
+        <div class="proc-sub">Joint business model with revenue scenarios, margin simulation, pricing floors, multi-year P&L and cash-flow assumptions</div>
+      </div>
+      <div class="proc-node">
+        <div class="proc-num">Stage 04</div>
+        <div class="proc-title">Negotiation & Internal Approval</div>
+        <div class="proc-sub">Presentation and negotiation with senior Japanese client executives; aligned on commercial terms, distribution rights, and activation timeline</div>
+      </div>
+    </div>
+
+    <div class="insight-box">The differentiator in the bid was not just the market case — it was the <strong>commercial architecture specificity</strong>: price floors, controlled distribution logic, and a co-branded trade investment model. Generic market reports lose to structured commercial proposals.</div>
+  </div>
+
+  <!-- ── COMMERCIAL ARCHITECTURE ───────────────── -->
+  <div class="cs-section">
+    <div class="cs-section-label">Commercial Architecture</div>
+    <h2>Building the China Distribution Model from Zero</h2>
+
+    <!-- Channel tiers -->
+    <div class="ch-arch">
+      <div class="ch-arch-title">Distribution Architecture — 3 Tiers</div>
+      <div class="ch-tier">
+        <div class="ch-tier-label">Tier 1</div>
+        <div class="ch-tier-content">
+          <div class="ch-tier-name">Japan Principal (Brand Owner)</div>
+          <div class="ch-tier-desc">Product supply, brand guidelines, pricing policy, promotional calendar alignment with Japan HQ</div>
+        </div>
+      </div>
+      <div class="ch-tier highlight">
+        <div class="ch-tier-label">Tier 2</div>
+        <div class="ch-tier-content">
+          <div class="ch-tier-name">Exclusive General Agent — This Role</div>
+          <div class="ch-tier-desc">Distributor of record · commercial model ownership · sub-distributor management · channel P&L accountability · KAM between Japan HQ and China operations</div>
+        </div>
+      </div>
+      <div class="ch-tier">
+        <div class="ch-tier-label">Tier 3</div>
+        <div class="ch-tier-content">
+          <div class="ch-tier-name">End Channels</div>
+          <div class="ch-tier-desc">Cross-border e-commerce (Tmall International, JD CBT) · offline specialty retail · professional channel (salon/trade)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Commercial model grid -->
+    <div class="comm-grid">
+      <div class="comm-cell head"><div class="comm-dim">Commercial Lever</div><div class="comm-val">Design Element</div></div>
+      <div class="comm-cell head"><div class="comm-dim">Purpose</div><div class="comm-val">Role in Model</div></div>
+      <div class="comm-cell head"><div class="comm-dim">Ownership</div><div class="comm-val">Accountability</div></div>
+
+      <div class="comm-cell"><div class="comm-dim">Pricing Architecture</div><div class="comm-val">MSRP → price floors → channel discounts</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">Prevent channel conflict; protect brand equity; maintain Japan HQ's premium positioning</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">General Agent (this role) — enforced via contract terms with sub-distributors</div></div>
+
+      <div class="comm-cell"><div class="comm-dim">Distribution Control</div><div class="comm-val">Approved channel list, exclusivity clauses, gray-market prevention</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">Single accountable commercial window; prevents unauthorized importers undercutting price</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">General Agent sets and polices terms</div></div>
+
+      <div class="comm-cell"><div class="comm-dim">Trade Investment</div><div class="comm-val">Platform listing fees, KOL seeding, promotional depth calendar</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">Build brand awareness in China market; align promotional timing with Japan seasonal calendar</div></div>
+      <div class="comm-cell"><div class="comm-dim"></div><div class="comm-val">Joint contribution model: brand vs. agent co-investment</div></div>
+    </div>
+  </div>
+
+  <!-- ── KAM MANAGEMENT ──────────────────────────── -->
+  <div class="cs-section">
+    <div class="cs-section-label">Ongoing KAM — After the Win</div>
+    <h2>From Mandate to Account Ownership</h2>
+
+    <p style="font-size:13px;color:#444;line-height:1.9;margin-bottom:1.2rem">Winning the bid was the entry point. The real work was building a structured KAM relationship that made the Japan principal confident their brand was being managed strategically in China — not just distributed.</p>
+
+    <div class="kam-grid">
+      <div class="kam-card">
+        <div class="kam-icon"><i class="ti ti-calendar"></i></div>
+        <div class="kam-title">Regular Reporting Cadence</div>
+        <div class="kam-desc">Monthly sell-in / sell-out reports with China market commentary; quarterly business reviews aligning on channel performance, promotional ROI, and portfolio priorities with Japan HQ stakeholders.</div>
+      </div>
+      <div class="kam-card">
+        <div class="kam-icon"><i class="ti ti-chart-line"></i></div>
+        <div class="kam-title">Joint Business Planning</div>
+        <div class="kam-desc">Annual and seasonal JBP covering volume forecasts, promotional investment, channel activation calendar, and brand protection measures — co-developed with Japan brand team and internal operations.</div>
+      </div>
+      <div class="kam-card">
+        <div class="kam-icon"><i class="ti ti-building-store"></i></div>
+        <div class="kam-title">Channel Development</div>
+        <div class="kam-desc">Expanded from initial cross-border e-commerce entry into offline specialty retail and professional salon channels; prioritized placements that reinforced the brand's quality positioning vs domestic alternatives.</div>
+      </div>
+      <div class="kam-card">
+        <div class="kam-icon"><i class="ti ti-shield-check"></i></div>
+        <div class="kam-title">Brand Protection</div>
+        <div class="kam-desc">Monitored and acted on unauthorized importers; price-floor enforcement via sub-distributor agreements; escalated brand integrity issues to Japan principal with documented channel audits.</div>
+      </div>
+    </div>
+
+    <div class="insight-box accent">The shift from bid winner to trusted KAM partner required consistent delivery against JBP commitments and transparent reporting — even when results required course correction. Client trust at the <strong>C-level principal relationship</strong> level was built through cadence and accountability, not just commercial outcomes.</div>
+  </div>
+
+  <!-- ── OUTPUT ─────────────────────────────────── -->
+  <div class="cs-section">
+    <div class="cs-section-label">Output & Skills Demonstrated</div>
+    <h2>Competitive Win + Full-Cycle Account Ownership</h2>
+    <p style="font-size:13px;color:#444;line-height:1.9">This engagement demonstrates the full KAM and BD cycle: competitive intelligence and bid strategy → commercial architecture design → executive negotiation → ongoing account management and Japan HQ relationship. The market entry case built here directly informed subsequent brand portfolio work across the wider account book.</p>
+    <div class="skills-used">
+      <span class="su">Competitive Bid Strategy</span>
+      <span class="su">China Market Entry Analysis</span>
+      <span class="su">Distribution Architecture Design</span>
+      <span class="su">P&L Modelling & Commercial Scenarios</span>
+      <span class="su">Pricing Architecture & Channel Control</span>
+      <span class="su">Key Account Management (KAM)</span>
+      <span class="su">Executive Negotiation (Japan C-level)</span>
+      <span class="su">Joint Business Planning</span>
+      <span class="su">Cross-border E-commerce (Tmall International)</span>
+      <span class="su">Regulatory & Compliance (NMPA, CBT)</span>
+      <span class="su">Brand Protection & Gray-Market Prevention</span>
+      <span class="su">Stakeholder Management (Japan HQ)</span>
+    </div>
+    <a class="btn1" href="contact.html">Work with Dan →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="fcopy">© 2026 Dan Xu</div>
+  <button class="ftop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
+</footer>
+</body>
+</html>
